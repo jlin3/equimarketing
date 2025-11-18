@@ -389,9 +389,9 @@ export const siteConfig = {
     ],
   },
   featureSection: {
-    title: "From Design Workshop to Funded Program",
+    title: "From CIO Design Workshop to Funded Program",
     description:
-      "Four stages to launch—typically 6-12 months start to finish.",
+      "Four partnership stages to launch your custom platform—typically 6-12 months start to finish.",
     items: [
       {
         id: 1,
@@ -405,7 +405,7 @@ export const siteConfig = {
         id: 2,
         title: "Build Structure & Select Managers",
         content:
-          "We choose the regulatory wrapper and blend 15-30 underlying strategies—hedge and niche credit, with SMA preference. We engineer the volatility and drawdown profile to fit your IPS language.",
+          "We partner with your CIO to choose the regulatory wrapper and blend 15-30 underlying mid-market strategies—hedge and niche credit, with SMA preference. We engineer the volatility and drawdown profile to fit your IPS language.",
         image:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
@@ -776,7 +776,7 @@ export const siteConfig = {
 
         title: "Mid-Market Manager Access",
         description:
-          "Diversified hedge and niche credit strategies from managers typically unavailable to individual RIAs—engineered for genuine uncorrelation, not rebranded beta.",
+          "Diversified hedge and niche credit strategies from managers ($100M-$2B AUM) typically unavailable to individual RIAs—engineered for genuine uncorrelation, not rebranded beta or closet indexing.",
       },
       {
         id: 2,
@@ -1073,9 +1073,9 @@ export const siteConfig = {
     faQitems: [
       {
         id: 1,
-        question: "How is Equi different from iCapital or CAIS?",
+        question: "How is Equi different from iCapital, CAIS, or Allocate?",
         answer:
-          "We're not a feeder platform—we don't take distribution kickbacks or push crowded funds. We build custom evergreen vehicles for your firm using mid-market managers ($100M-$2B AUM) where alpha sources remain durable. We negotiate institutional pricing and pass savings through. Your firm participates in economics, creating a real second P&L. We're your co-engineer, not your product distributor.",
+          "We're not a marketplace or feeder platform—we don't take distribution kickbacks or push crowded funds. We build custom evergreen vehicles exclusively for your firm using mid-market managers ($100M-$2B AUM) where alpha sources remain durable. We negotiate institutional pricing and pass savings through. Your firm participates in economics, creating a real second P&L. We're your co-engineer and custom hedge fund builder, not your product distributor.",
       },
       {
         id: 2,
