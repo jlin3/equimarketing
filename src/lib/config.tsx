@@ -74,7 +74,7 @@ export const siteConfig = {
     badge: "Institutional alternatives for RIAs",
     title: "Supercharge Your RIA with Institutional-Grade Alternatives",
     description:
-      "Custom hedge fund programs and portable alpha for visionary RIA CIOs—designed for risk control, brand differentiation, and operational simplicity.",
+      "Launch your own white-label alternatives program with custom hedge fund strategies and portable alpha solutions. Join the top 5% of RIAs delivering institutional-grade outcomes with operational simplicity.",
     cta: {
       primary: {
         text: "Book a Demo",
