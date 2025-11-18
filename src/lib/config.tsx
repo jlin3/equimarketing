@@ -30,14 +30,15 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "Equi",
-  description: "Institutional-grade liquid alternatives and portable alpha programs for RIAs.",
+  description: "Custom hedge fund programs and portable alpha for visionary RIA CIOs—white labeled to your brand, designed for risk control and brand differentiation.",
   cta: "Book a Demo",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: [
-    "Portable Alpha",
-    "Liquid Alternatives",
-    "RIA Platform",
-    "Alternatives Management",
+    "Custom Hedge Fund Programs",
+    "Portable Alpha for RIAs",
+    "RIA Alternatives Platform",
+    "White Label Hedge Funds",
+    "Mid-Market Manager Access",
   ],
   links: {
     email: "hello@equi.com",
@@ -71,9 +72,9 @@ export const siteConfig = {
       </svg>
     ),
     badge: "Institutional alternatives for RIAs",
-    title: "Customize a top-tier hedge fund alternatives platform",
+    title: "Your Institutional-Grade Alternatives Program, White Labeled to Your Brand",
     description:
-      "Custom liquid alternatives and portable alpha programs—designed, operated, and scaled by Equi. Your brand, your clients, institutional outcomes.",
+      "Custom hedge fund programs and portable alpha for visionary RIA CIOs—designed for risk control, brand differentiation, and operational simplicity.",
     cta: {
       primary: {
         text: "Book a Demo",
@@ -86,8 +87,8 @@ export const siteConfig = {
     },
   },
   companyShowcase: {
-    title: "Trusted by Leading RIAs",
-    description: "Powering alternatives platforms for wealth managers nationwide",
+    title: "Trusted by Visionary RIA CIOs",
+    description: "Building custom alternatives programs with forward-thinking wealth management firms",
     partners: [
       {
         id: 1,
@@ -311,6 +312,82 @@ export const siteConfig = {
       },
     ],
   },
+  metricsSection: {
+    title: "Equi by the Numbers",
+    subtitle: "As of Q4 2025",
+    metrics: [
+      {
+        value: "30-40",
+        label: "Manager Relationships",
+        sublabel: "Small to midsize strategies",
+      },
+      {
+        value: "50-100",
+        label: "Strategies Covered",
+        sublabel: "Diversified hedge & niche credit",
+      },
+      {
+        value: "$300M",
+        label: "2026 AUM Target",
+        sublabel: "On track for institutional scale",
+      },
+      {
+        value: "6-12mo",
+        label: "Platform Launch",
+        sublabel: "Workshop to funded program",
+      },
+    ],
+  },
+  founderSection: {
+    title: "Meet the Founders",
+    subtitle: "Silicon Valley Meets Wall Street",
+    founders: [
+      {
+        name: "Tory Reiss",
+        role: "CEO, Co-Founder",
+        bio: "3x founder of VC-backed tech companies, including Archblock, where he launched TrueFi ($1.7B+ in originations) and TrueUSD ($1B+ market cap). A passionate educator in financial literacy.",
+        videoUrl: "/founders/tory.mp4",
+        linkedIn: "https://www.linkedin.com/in/toryreiss",
+      },
+      {
+        name: "Itay Vinik",
+        role: "CIO, Co-Founder",
+        bio: "Over 15 years in asset management. Began career at UBS before managing a market-neutral hedge fund that delivered uncorrelated returns, consistently outperforming public market benchmarks.",
+        videoUrl: "/founders/itay.mp4",
+        linkedIn: "https://www.linkedin.com/in/itayvinik",
+      },
+    ],
+  },
+  pressSection: {
+    title: "Building in Public",
+    description: "Updates coming soon as we reach key milestones",
+    pressItems: [],
+    backers: [],
+  },
+  educationalSection: {
+    title: "The Equi Institute",
+    subtitle: "Thought leadership for CIOs and allocators",
+    podcasts: [
+      {
+        name: "RIA Platform Builders",
+        description:
+          "30-minute practitioner conversations with RIA CIOs, OCIO leaders, and allocators who built platforms",
+        audience: "Target RIA CIOs",
+      },
+      {
+        name: "Capital and Time",
+        description:
+          "35-45 minute interviews on how elite founders and investors allocate money and time",
+        audience: "LP prospects & entrepreneurs",
+      },
+      {
+        name: "Macro Minutes",
+        description:
+          "5-8 minute weekly macro brief with one chart, three moves that matter, one portfolio thought",
+        audience: "Institutional investors",
+      },
+    ],
+  },
   featureSection: {
     title: "From Design Workshop to Funded Program",
     description:
@@ -353,14 +430,14 @@ export const siteConfig = {
   bentoSection: {
     title: "Built Different from the Ground Up",
     description:
-      "Not a feeder platform. Not a product shelf. A custom alternatives engine designed around your firm's economics and client outcomes.",
+      "Not a marketplace. Not a feeder platform. Not a product shelf. A custom hedge fund builder designed around your firm's brand, economics, and client outcomes.",
     items: [
       {
         id: 1,
         content: <FirstBentoAnimation />,
         title: "Custom Evergreen Funds",
         description:
-          "White-labeled strategies built from mid-market managers. Genuinely uncorrelated vehicles with liquidity and minimums designed for your client base.",
+          "White-labeled strategies built exclusively for your RIA from mid-market managers ($100M-$2B AUM). Genuinely uncorrelated vehicles with liquidity and minimums designed for your client base.",
       },
       {
         id: 2,
@@ -388,7 +465,7 @@ export const siteConfig = {
         content: <FourthBentoAnimation once={false} />,
         title: "Aligned Economics, No Kickbacks",
         description:
-          "No feeders, no distribution fees, no single-manager hero bets. We negotiate institutional pricing and pass savings through. Your firm shares in economics—a real second revenue line.",
+          "We're not a marketplace taking distribution fees. No feeders, no kickbacks, no single-manager hero bets. We negotiate institutional pricing with mid-market managers and pass savings through. Your firm shares in economics—a real second revenue line.",
       },
     ],
   },
