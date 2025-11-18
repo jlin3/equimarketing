@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: "SkyAgent",
-  url: "https://agent-magicui.vercel.app",
-  description: "Your template for building AI-powered agents with Magic UI.",
+  name: "Equi",
+  url: "https://equi.com",
+  description: "Institutional-grade liquid alternatives and portable alpha programs for RIAs — including the proposal tools and education that drive adoption.",
   links: {
-    twitter: "https://x.com/dillionverma",
-    github: "https://github.com/dillionverma",
+    twitter: "https://x.com/equi",
+    github: "https://github.com/equi",
   },
 };
 

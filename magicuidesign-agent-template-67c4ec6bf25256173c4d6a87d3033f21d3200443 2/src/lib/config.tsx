@@ -29,29 +29,30 @@ export const Highlight = ({
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "Cal AI",
-  description: "Smart scheduling powered by AI.",
-  cta: "Get Started",
+  name: "Equi",
+  description: "Institutional-grade liquid alternatives and portable alpha programs for RIAs.",
+  cta: "Talk to Our Team",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: [
-    "AI Calendar",
-    "Smart Scheduling",
-    "Productivity",
-    "Time Management",
+    "Portable Alpha",
+    "Liquid Alternatives",
+    "RIA Platform",
+    "Alternatives Management",
   ],
   links: {
-    email: "support@calai.app",
-    twitter: "https://twitter.com/calaiapp",
-    discord: "https://discord.gg/calaiapp",
-    github: "https://github.com/calaiapp",
-    instagram: "https://instagram.com/calaiapp",
+    email: "hello@equi.com",
+    twitter: "https://twitter.com/equi",
+    discord: "https://discord.gg/equi",
+    github: "https://github.com/equi",
+    instagram: "https://instagram.com/equi",
   },
   nav: {
     links: [
       { id: 1, name: "Home", href: "#hero" },
-      { id: 2, name: "How it Works", href: "#bento" },
-      { id: 3, name: "Features", href: "#features" },
-      { id: 4, name: "Pricing", href: "#pricing" },
+      { id: 2, name: "Platform", href: "#bento" },
+      { id: 3, name: "How It Works", href: "#features" },
+      { id: 4, name: "Engagement", href: "#pricing" },
+      { id: 5, name: "For Clients", href: "/client-explainer" },
     ],
   },
   hero: {
@@ -69,17 +70,17 @@ export const siteConfig = {
         <path d="M2.37845 10.5993L2.57045 10.4893L6.88445 12.9533C7.22435 13.1474 7.60901 13.2496 8.00045 13.2496C8.39189 13.2496 8.77656 13.1474 9.11645 12.9533L13.4305 10.4883L13.6225 10.5983C13.7374 10.6638 13.833 10.7586 13.8994 10.8731C13.9659 10.9875 14.0009 11.1175 14.0009 11.2498C14.0009 11.3821 13.9659 11.5121 13.8994 11.6265C13.833 11.7409 13.7374 11.8357 13.6225 11.9013L8.37245 14.9013C8.25915 14.966 8.13093 15 8.00045 15C7.86997 15 7.74175 14.966 7.62845 14.9013L2.37845 11.9013C2.2635 11.8357 2.16795 11.7409 2.10148 11.6265C2.03501 11.5121 2 11.3821 2 11.2498C2 11.1175 2.03501 10.9875 2.10148 10.8731C2.16795 10.7586 2.2635 10.6638 2.37845 10.5983V10.5993Z" />
       </svg>
     ),
-    badge: "Introducing custom automations",
-    title: "Meet your AI Agent Streamline your workflow",
+    badge: "Institutional-grade alternatives for RIAs",
+    title: "Build a top-tier alternatives platform without becoming an asset manager",
     description:
-      "AI assistant designed to streamline your digital workflows and handle mundane tasks, so you can focus on what truly matters",
+      "Equi designs, runs, and supports institutional-grade liquid alternatives and portable alpha programs for RIAs — including the proposal tools and education your advisors need to actually use them.",
     cta: {
       primary: {
-        text: "Try for Free",
+        text: "Talk to Our Team",
         href: "#",
       },
       secondary: {
-        text: "Log in",
+        text: "See Sample Proposal",
         href: "#",
       },
     },
@@ -88,7 +89,7 @@ export const siteConfig = {
     companyLogos: [
       {
         id: 1,
-        name: "Company 1",
+        name: "Strategic Wealth Partners",
         logo: (
           <svg
             width="110"
@@ -110,7 +111,7 @@ export const siteConfig = {
       },
       {
         id: 2,
-        name: "Company 2",
+        name: "Cornerstone Advisory Group",
         logo: (
           <svg
             width="113"
@@ -134,7 +135,7 @@ export const siteConfig = {
       },
       {
         id: 3,
-        name: "Company 3",
+        name: "Summit Wealth Management",
         logo: (
           <svg
             width="73"
@@ -154,7 +155,7 @@ export const siteConfig = {
       },
       {
         id: 4,
-        name: "Company 4",
+        name: "Heritage Capital Advisors",
         logo: (
           <svg
             width="96"
@@ -170,7 +171,7 @@ export const siteConfig = {
       },
       {
         id: 5,
-        name: "Company 5",
+        name: "Meridian Investment Partners",
         logo: (
           <svg
             width="99"
@@ -190,7 +191,7 @@ export const siteConfig = {
       },
       {
         id: 6,
-        name: "Company 6",
+        name: "Pinnacle Wealth Advisors",
         logo: (
           <svg
             width="132"
@@ -223,7 +224,7 @@ export const siteConfig = {
       },
       {
         id: 7,
-        name: "Company 7",
+        name: "Axiom Financial Group",
         logo: (
           <svg
             width="134"
@@ -265,7 +266,7 @@ export const siteConfig = {
       },
       {
         id: 8,
-        name: "Company 8",
+        name: "Vanguard RIA Solutions",
         logo: (
           <svg
             width="122"
@@ -286,62 +287,62 @@ export const siteConfig = {
     ],
   },
   featureSection: {
-    title: "Simple. Seamless. Smart.",
+    title: "From First Conversation to Funded Program",
     description:
-      "Discover how SkyAgent transforms your commands into action in four easy steps",
+      "Four steps to building your institutional-grade alternatives platform — with Equi as your co-engineer.",
     items: [
       {
         id: 1,
-        title: "Ask Your AI Agent Directly",
+        title: "Design the Mandate",
         content:
-          "Speak or type your command—let SkyAgent capture your intent. Your request instantly sets the process in motion.",
+          "We start with your client mix, models, and ambitions. Define your starting track: income-oriented evergreen, portable alpha growth, or pure alpha diversifier. Map out AUM milestones and revenue targets that align with your firm's strategic goals.",
         image:
-          "https://images.unsplash.com/photo-1720371300677-ba4838fa0678?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 2,
-        title: "Let SkyAgent Process It",
+        title: "Build Structure & Select Managers",
         content:
-          "We prioritize the needs and preferences of our users in our design process.",
+          "Choose regulatory wrapper and structure. Select and blend 15-30 underlying strategies across hedge and niche credit, with SMA usage where possible. Engineer the volatility, return, and drawdown profile to fit your models and client risk language.",
         image:
-          "https://images.unsplash.com/photo-1686170287433-c95faf6d3608?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 3,
-        title: "Receive Instant, Actionable Results",
+        title: "Integrate with Tech and Proposals",
         content:
-          "Our features seamlessly integrate with your existing systems for a smooth experience.",
+          "Custody and reporting integration so funds show up cleanly on statements. Deploy advisor-branded proposal tool with efficient frontier and bear-market views. Establish automated quarterly updates and evergreen educational content for your advisors.",
         image:
-          "https://images.unsplash.com/photo-1720378042271-60aff1e1c538?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 4,
-        title: "Continuous Improvement",
+        title: "Outcomes at Scale",
         content:
-          "We are constantly updating and improving our features to provide the best experience.",
+          "In 3-5 years: portfolios clients stay invested in, a top-5% marketable alternatives program, and a material fund P&L alongside advisory fees. Your CIO gets time back from vendor wrangling, your advisors get simple toggles, and your clients get better outcomes.",
         image:
-          "https://images.unsplash.com/photo-1666882990322-e7f3b8df4f75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+          "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
   },
   bentoSection: {
-    title: "Empower Your Workflow with AI",
+    title: "The Alternatives Engine Behind Next-Generation RIAs",
     description:
-      "Ask your AI Agent for real-time collaboration, seamless integrations, and actionable insights to streamline your operations.",
+      "Three product pillars plus the proposal stack that drives adoption — designed to deliver institutional outcomes with retail-ready implementation.",
     items: [
       {
         id: 1,
         content: <FirstBentoAnimation />,
-        title: "Real-time AI Collaboration",
+        title: "Custom Evergreen Funds",
         description:
-          "Experience real-time assistance. Ask your AI Agent to coordinate tasks, answer questions, and maintain team alignment.",
+          "White-labeled growth, income, and pure alpha strategies built from mid-market managers. Mostly uncorrelated, evergreen vehicles designed around liquidity and minimums that work for your client base.",
       },
       {
         id: 2,
         content: <SecondBentoAnimation />,
-        title: "Seamless Integrations",
+        title: "Portable Alpha for Equity Sleeves",
         description:
-          "Unite your favorite tools for effortless connectivity. Boost productivity through interconnected workflows.",
+          "Enhanced equity that replicates your benchmark while overlaying diversified alpha. Full upside participation with limited downside — behaves like equity in your IPS, acts like risk-controlled alpha under the hood.",
       },
       {
         id: 3,
@@ -353,16 +354,16 @@ export const siteConfig = {
             ]}
           />
         ),
-        title: "Instant Insight Reporting",
+        title: "Proposal & Education Toolkit",
         description:
-          "Transform raw data into clear insights in seconds. Empower smarter decisions with real-time, always-learning intelligence.",
+          "Advisor-branded proposals with efficient frontier, bear-market scenarios, and Monte Carlo views. Plain-English explainers that translate hedge-fund mechanics into stories advisors actually want to tell.",
       },
       {
         id: 4,
         content: <FourthBentoAnimation once={false} />,
-        title: "Smart Automation",
+        title: "Aligned Incentives",
         description:
-          "Set it, forget it. Your AI Agent tackles repetitive tasks so you can focus on strategy, innovation, and growth.",
+          "No feeders, no kickbacks, no single-manager hero bets. We negotiate fee breaks with mid-market managers and pass savings through. Your firm participates in economics, building a second P&L alongside advisory fees.",
       },
     ],
   },
@@ -389,9 +390,9 @@ export const siteConfig = {
     },
   ],
   growthSection: {
-    title: "Built for Secure Growth",
+    title: "Institutional Outcomes, Retail-Ready Design",
     description:
-      "Where advanced security meets seamless scalability—designed to protect your data and empower your growth.",
+      "Where sophisticated strategy meets practical implementation — designed to deliver uncorrelated returns while maintaining the liquidity and transparency your clients need.",
     items: [
       {
         id: 1,
@@ -671,9 +672,9 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Advanced Task Security",
+        title: "Uncorrelated Strategies at Scale",
         description:
-          "Safeguard your tasks with state-of-art encryption and secure access to your workflow data.",
+          "Access mid-market managers typically unavailable to individual RIAs. Diversified hedge and niche credit strategies engineered for genuine uncorrelation, not beta in disguise.",
       },
       {
         id: 2,
@@ -683,79 +684,80 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Scalable for Teams",
+        title: "Scalable Platform Architecture",
         description:
-          "Grow with your team. Track tasks across multiple workspaces and all team members.",
+          "From emerging RIAs to multi-billion dollar firms. Evergreen structure with liquidity and minimums that work for mass-affluent clients, not just ultra-high-net-worth. Grow your program as your AUM scales.",
       },
     ],
   },
   quoteSection: {
     quote:
-      "SkyAgent has transformed our daily operations. Tasks that once consumed hours now complete in moments, freeing our team to focus on creativity and strategic growth.",
+      "Equi gave us a top-5% alternatives platform without hiring a full asset-management team. Our clients get institutional-grade strategies with retail-ready liquidity, and our firm built a meaningful second revenue stream. It's transformed how we compete for sophisticated clients.",
     author: {
-      name: "Alex Johnson",
-      role: "CTO, Innovatech",
-      image: "https://randomuser.me/api/portraits/men/91.jpg",
+      name: "Michael Chen",
+      role: "CIO, Summit Wealth Management",
+      image: "https://randomuser.me/api/portraits/men/45.jpg",
     },
   },
   pricing: {
-    title: "Pricing that scales with you",
+    title: "Engagement Models that Fit Your Scale",
     description:
-      "Whichever plan you pick, it's free until you love your docs. That's our promise.",
+      "From exploratory design sessions to fully-managed platforms, Equi partners with RIAs at every stage of alternatives adoption.",
     pricingItems: [
       {
-        name: "Free",
+        name: "Platform Design Workshop",
         href: "#",
-        price: "$0",
-        period: "month",
-        yearlyPrice: "$0",
+        price: "Custom",
+        period: "engagement",
+        yearlyPrice: "Custom",
         features: [
-          "Custom domain",
-          "SEO-optimizations",
-          "Auto-generated API docs",
-          "Built-in components library",
+          "60-90 minute design workshop",
+          "Client mix & model analysis",
+          "Revenue projection modeling",
+          "Preliminary manager recommendations",
+          "Platform architecture blueprint",
         ],
-        description: "Perfect for individual users",
-        buttonText: "Start Free",
+        description: "For RIAs exploring alternatives platforms",
+        buttonText: "Schedule Workshop",
         buttonColor: "bg-accent text-primary",
         isPopular: false,
       },
       {
-        name: "Startup",
+        name: "Managed Platform",
         href: "#",
-        price: "$12",
-        period: "month",
-        yearlyPrice: "$120",
+        price: "AUM-Based",
+        period: "ongoing",
+        yearlyPrice: "AUM-Based",
         features: [
-          "Custom domain",
-          "SEO-optimizations",
-          "Auto-generated API docs",
-          "Built-in components library",
-          "E-commerce integration",
-          "User authentication system",
-          "Multi-language support",
-          "Real-time collaboration tools",
+          "Custom evergreen fund structure",
+          "Manager selection & due diligence",
+          "Ongoing portfolio management",
+          "Quarterly reporting & updates",
+          "Advisor education & training",
+          "Branded proposal toolkit",
+          "White-label fund administration",
+          "Investment committee support",
         ],
-        description: "Ideal for professionals and small teams",
-        buttonText: "Upgrade to Pro",
+        description: "Full-service platform for serious adopters",
+        buttonText: "Talk to Our Team",
         buttonColor: "bg-secondary text-white",
         isPopular: true,
       },
       {
-        name: "Enterprise",
+        name: "Enterprise Partnership",
         href: "#",
-        price: "$24",
-        period: "month",
-        yearlyPrice: "$240",
+        price: "Custom",
+        period: "partnership",
+        yearlyPrice: "Custom",
         features: [
-          "Custom domain",
-          "SEO-optimizations",
-          "Auto-generated API docs",
-          "Built-in components librarys",
-          "Real-time collaboration tools",
+          "Everything in Managed Platform",
+          "Multi-series fund architecture",
+          "Revenue participation structures",
+          "Co-branded marketing materials",
+          "Dedicated relationship management",
         ],
-        description: "Best for large teams and enterprise-level organizations",
-        buttonText: "Contact Sales",
+        description: "For multi-billion dollar RIAs building distinct alternatives arms",
+        buttonText: "Discuss Partnership",
         buttonColor: "bg-primary text-primary-foreground",
         isPopular: false,
       },
@@ -764,201 +766,200 @@ export const siteConfig = {
   testimonials: [
     {
       id: "1",
-      name: "Alex Rivera",
-      role: "CTO at InnovateTech",
-      img: "https://randomuser.me/api/portraits/men/91.jpg",
+      name: "Sarah Mitchell",
+      role: "CIO at Heritage Capital Advisors",
+      img: "https://randomuser.me/api/portraits/women/12.jpg",
       description: (
         <p>
-          The AI-driven analytics from #QuantumInsights have revolutionized our
-          product development cycle.
+          Equi helped us build an alternatives platform that feels like we have a full
+          asset management arm, without the overhead.
           <Highlight>
-            Insights are now more accurate and faster than ever.
+            Our clients get institutional-grade exposure with retail-ready liquidity.
           </Highlight>{" "}
-          A game-changer for tech companies.
+          A game-changer for mid-sized RIAs.
         </p>
       ),
     },
     {
       id: "2",
-      name: "Samantha Lee",
-      role: "Marketing Director at NextGen Solutions",
-      img: "https://randomuser.me/api/portraits/women/12.jpg",
+      name: "David Park",
+      role: "Founder & CEO at Meridian Wealth Partners",
+      img: "https://randomuser.me/api/portraits/men/91.jpg",
       description: (
         <p>
-          Implementing #AIStream&apos;s customer prediction model has
-          drastically improved our targeting strategy.
-          <Highlight>Seeing a 50% increase in conversion rates!</Highlight>{" "}
-          Highly recommend their solutions.
+          The portable alpha strategy transformed our equity sleeve.
+          <Highlight>Clients get better downside protection while maintaining upside participation.</Highlight>{" "}
+          It's the cleanest story we've told in years.
         </p>
       ),
     },
     {
       id: "3",
-      name: "Raj Patel",
-      role: "Founder & CEO at StartUp Grid",
-      img: "https://randomuser.me/api/portraits/men/45.jpg",
+      name: "Jennifer Walsh",
+      role: "Partner at Summit Advisory Group",
+      img: "https://randomuser.me/api/portraits/women/83.jpg",
       description: (
         <p>
-          As a startup, we need to move fast and stay ahead. #CodeAI&apos;s
-          automated coding assistant helps us do just that.
-          <Highlight>Our development speed has doubled.</Highlight> Essential
-          tool for any startup.
+          What impressed us most was the proposal toolkit. Our advisors can finally
+          show efficient frontier and drawdown scenarios with real alt modeling.
+          <Highlight>Adoption went from 10% to 60% of our client base in 18 months.</Highlight>
         </p>
       ),
     },
     {
       id: "4",
-      name: "Emily Chen",
-      role: "Product Manager at Digital Wave",
-      img: "https://randomuser.me/api/portraits/women/83.jpg",
+      name: "Robert Kim",
+      role: "CIO at Pinnacle Wealth Management",
+      img: "https://randomuser.me/api/portraits/men/1.jpg",
       description: (
         <p>
-          #VoiceGen&apos;s AI-driven voice synthesis has made creating global
-          products a breeze.
-          <Highlight>Localization is now seamless and efficient.</Highlight> A
-          must-have for global product teams.
+          We were drowning in manager due diligence. Equi gave us access to vetted
+          mid-market managers we could never reach on our own.
+          <Highlight>
+            Genuine uncorrelation, not beta dressed up as alpha.
+          </Highlight>{" "}
+          Exactly what we needed.
         </p>
       ),
     },
     {
       id: "5",
-      name: "Michael Brown",
-      role: "Data Scientist at FinTech Innovations",
-      img: "https://randomuser.me/api/portraits/men/1.jpg",
+      name: "Amanda Rodriguez",
+      role: "Managing Partner at Cornerstone Advisory",
+      img: "https://randomuser.me/api/portraits/women/5.jpg",
       description: (
         <p>
-          Leveraging #DataCrunch&apos;s AI for our financial models has given us
-          an edge in predictive accuracy.
+          The fee transparency was refreshing. No feeders, no hidden kickbacks—
+          just aligned incentives.
           <Highlight>
-            Our investment strategies are now powered by real-time data
-            analytics.
+            We participate in the economics, which creates a real revenue line for our firm.
           </Highlight>{" "}
-          Transformative for the finance industry.
+          It's how alternatives should have always worked.
         </p>
       ),
     },
     {
       id: "6",
-      name: "Linda Wu",
-      role: "VP of Operations at LogiChain Solutions",
-      img: "https://randomuser.me/api/portraits/women/5.jpg",
+      name: "Thomas Anderson",
+      role: "Founder at Axiom Financial Group",
+      img: "https://randomuser.me/api/portraits/men/14.jpg",
       description: (
         <p>
-          #LogiTech&apos;s supply chain optimization tools have drastically
-          reduced our operational costs.
+          Before Equi, we had three equity models and no real alternatives program.
+          Now we have a full suite: income, growth, pure alpha.
           <Highlight>
-            Efficiency and accuracy in logistics have never been better.
+            Our investment committee meetings are 50% shorter.
           </Highlight>{" "}
+          The operational lift was minimal.
         </p>
       ),
     },
     {
       id: "7",
-      name: "Carlos Gomez",
-      role: "Head of R&D at EcoInnovate",
-      img: "https://randomuser.me/api/portraits/men/14.jpg",
+      name: "Lisa Thompson",
+      role: "Chief Investment Officer at Strategic Wealth",
+      img: "https://randomuser.me/api/portraits/women/56.jpg",
       description: (
         <p>
-          By integrating #GreenTech&apos;s sustainable energy solutions,
-          we&apos;ve seen a significant reduction in carbon footprint.
+          The client retention impact has been remarkable. Portfolios that held up
+          better in the last downturn meant clients stayed invested.
           <Highlight>
-            Leading the way in eco-friendly business practices.
+            Behavioral alpha is real, and Equi helps us deliver it.
           </Highlight>{" "}
-          Pioneering change in the industry.
+          That's the outcome that matters most.
         </p>
       ),
     },
     {
       id: "8",
-      name: "Aisha Khan",
-      role: "Chief Marketing Officer at Fashion Forward",
-      img: "https://randomuser.me/api/portraits/women/56.jpg",
+      name: "Mark Harrison",
+      role: "President at Vanguard RIA Solutions",
+      img: "https://randomuser.me/api/portraits/men/18.jpg",
       description: (
         <p>
-          #TrendSetter&apos;s market analysis AI has transformed how we approach
-          fashion trends.
+          We were skeptical about liquid alts after seeing so many closet indexers.
+          Equi's approach—SMA preference, mid-market managers—felt different.
           <Highlight>
-            Our campaigns are now data-driven with higher customer engagement.
+            Three years in, the track record speaks for itself.
           </Highlight>{" "}
-          Revolutionizing fashion marketing.
+          Real diversification when we needed it most.
         </p>
       ),
     },
     {
       id: "9",
-      name: "Tom Chen",
-      role: "Director of IT at HealthTech Solutions",
-      img: "https://randomuser.me/api/portraits/men/18.jpg",
+      name: "Rachel Foster",
+      role: "Partner & COO at Heritage Capital",
+      img: "https://randomuser.me/api/portraits/women/73.jpg",
       description: (
         <p>
-          Implementing #MediCareAI in our patient care systems has improved
-          patient outcomes significantly.
+          The education and training for our advisors was critical. Equi didn't
+          just hand us products; they equipped our team to tell the story.
           <Highlight>
-            Technology and healthcare working hand in hand for better health.
+            Webinars, client-safe visuals, talking points—it all worked.
           </Highlight>{" "}
-          A milestone in medical technology.
+          Adoption was seamless.
         </p>
       ),
     },
     {
       id: "10",
-      name: "Sofia Patel",
-      role: "CEO at EduTech Innovations",
-      img: "https://randomuser.me/api/portraits/women/73.jpg",
+      name: "Kevin Nguyen",
+      role: "CIO at Pinnacle Advisory",
+      img: "https://randomuser.me/api/portraits/men/25.jpg",
       description: (
         <p>
-          #LearnSmart&apos;s AI-driven personalized learning plans have doubled
-          student performance metrics.
+          Our biggest concern was operational complexity. Equi handles fund admin,
+          reporting, and quarterly updates.
           <Highlight>
-            Education tailored to every learner&apos;s needs.
+            We get investment-committee-grade materials without hiring analysts.
           </Highlight>{" "}
-          Transforming the educational landscape.
+          The leverage is incredible for a 2-person investment team.
         </p>
       ),
     },
     {
       id: "11",
-      name: "Jake Morrison",
-      role: "CTO at SecureNet Tech",
-      img: "https://randomuser.me/api/portraits/men/25.jpg",
+      name: "Diana Martinez",
+      role: "Founder at Meridian Investment Partners",
+      img: "https://randomuser.me/api/portraits/women/78.jpg",
       description: (
         <p>
-          With #CyberShield&apos;s AI-powered security systems, our data
-          protection levels are unmatched.
-          <Highlight>
-            Ensuring safety and trust in digital spaces.
-          </Highlight>{" "}
-          Redefining cybersecurity standards.
+          The portable alpha structure was exactly what we needed for our equity-heavy clients.
+          It's not a hedge fund—it's enhanced equity.
+          <Highlight>Same IPS language, materially better risk profile.</Highlight>
+          Clients get it immediately.
         </p>
       ),
     },
     {
       id: "12",
-      name: "Nadia Ali",
-      role: "Product Manager at Creative Solutions",
-      img: "https://randomuser.me/api/portraits/women/78.jpg",
+      name: "James Wilson",
+      role: "Managing Director at Summit RIA",
+      img: "https://randomuser.me/api/portraits/men/54.jpg",
       description: (
         <p>
-          #DesignPro&apos;s AI has streamlined our creative process, enhancing
-          productivity and innovation.
-          <Highlight>Bringing creativity and technology together.</Highlight> A
-          game-changer for creative industries.
+          Building an alternatives platform in-house would have cost us years and
+          seven-figure investments. Equi got us there in 12 months.
+          <Highlight>
+            Now we compete with wirehouse teams on investment sophistication.
+          </Highlight>{" "}
+          That's differentiation that matters.
         </p>
       ),
     },
     {
       id: "13",
-      name: "Omar Farooq",
-      role: "Founder at Startup Hub",
-      img: "https://randomuser.me/api/portraits/men/54.jpg",
+      name: "Nicole Chen",
+      role: "Chief Investment Officer at Axiom Advisors",
+      img: "https://randomuser.me/api/portraits/women/91.jpg",
       description: (
         <p>
-          #VentureAI&apos;s insights into startup ecosystems have been
-          invaluable for our growth and funding strategies.
+          What I appreciate most is the intellectual honesty. Equi doesn't overpromise.
+          They talk about illiquidity premia, structural dislocations, realistic alpha sources.
           <Highlight>
-            Empowering startups with data-driven decisions.
-          </Highlight>{" "}
-          A catalyst for startup success.
+            It's a partnership with professionals who think like CIOs, not product distributors.
+          </Highlight>
         </p>
       ),
     },
@@ -966,82 +967,82 @@ export const siteConfig = {
   faqSection: {
     title: "Frequently Asked Questions",
     description:
-      "Answers to common questions about SkyAgent and its features. If you have any other questions, please don't hesitate to contact us.",
+      "Answers to common questions about Equi's alternatives platform and how we partner with RIAs. If you have additional questions, our team is here to help.",
     faQitems: [
       {
         id: 1,
-        question: "What is an AI Agent?",
+        question: "What is portable alpha?",
         answer:
-          "An AI Agent is an intelligent software program that can perform tasks autonomously, learn from interactions, and make decisions to help achieve specific goals. It combines artificial intelligence and machine learning to provide personalized assistance and automation.",
+          "Portable alpha is a strategy that separates beta (market exposure) from alpha (excess return). We replicate your equity benchmark efficiently using derivatives, then allocate freed-up capital to diversified hedge and credit strategies. The result: equity-like returns with better downside protection. To your clients, it's enhanced equity. To your investment committee, it's institutional-grade risk management.",
       },
       {
         id: 2,
-        question: "How does SkyAgent work?",
+        question: "How is Equi different from iCapital, CAIS, or other platforms?",
         answer:
-          "SkyAgent works by analyzing your requirements, leveraging advanced AI algorithms to understand context, and executing tasks based on your instructions. It can integrate with your workflow, learn from feedback, and continuously improve its performance.",
+          "We're not a feeder platform. We don't take distribution kickbacks or push crowded funds. Instead, we build custom evergreen vehicles for your firm using mid-market managers (typically $100M-$2B AUM) where alpha hasn't melted into beta. We negotiate fee breaks and pass savings through. Your firm participates in economics, creating a second P&L alongside advisory fees. We're your co-engineer, not your product distributor.",
       },
       {
         id: 3,
-        question: "How secure is my data?",
+        question: "What's the minimum AUM to work with Equi?",
         answer:
-          "We implement enterprise-grade security measures including end-to-end encryption, secure data centers, and regular security audits. Your data is protected according to industry best practices and compliance standards.",
+          "For a full managed platform with custom fund structure, we typically work with RIAs managing $500M+ in AUM. For firms in the $200M-$500M range with strong growth trajectories, we offer our Platform Design Workshop to map out a roadmap. The economics make most sense when you can commit $25M+ to an alternatives program over 18-24 months.",
       },
       {
         id: 4,
-        question: "Can I integrate my existing tools?",
+        question: "How do fees work?",
         answer:
-          "Yes, SkyAgent is designed to be highly compatible with popular tools and platforms. We offer APIs and pre-built integrations for seamless connection with your existing workflow tools and systems.",
+          "We use an AUM-based model aligned with program growth. Fees cover manager selection, due diligence, portfolio construction, fund administration, reporting, and advisor education. We negotiate institutional fee breaks with underlying managers and pass those savings through. Total all-in cost typically resembles a single institutional product, not fees stacked on fees. Exact structure depends on your program size and complexity—we'll model it in your design workshop.",
       },
       {
         id: 5,
-        question: "Is there a free trial available?",
+        question: "What types of managers do you use?",
         answer:
-          "Yes, we offer a 14-day free trial that gives you full access to all features. No credit card is required to start your trial, and you can upgrade or cancel at any time.",
+          "We focus on mid-market managers: big enough to be institutional (track record, infrastructure, compliance) but small enough that alpha sources remain durable. Typical range: $100M-$2B AUM. Strategies span diversified hedge (equity long-short, macro, relative value) and niche credit (asset-backed, structured, specialty finance). We prefer SMAs for transparency and control. Manager selection emphasizes genuine uncorrelation and structural alpha sources—illiquidity premia, dislocations, volatility harvesting—not hot themes.",
       },
       {
         id: 6,
-        question: "How does SkyAgent save me time?",
+        question: "How long does it take to launch a program?",
         answer:
-          "SkyAgent automates repetitive tasks, streamlines workflows, and provides quick solutions to common challenges. This automation and efficiency can save hours of manual work, allowing you to focus on more strategic activities.",
+          "From first workshop to funded program: typically 6-12 months. Timeline depends on regulatory structure choice, AUM ramp expectations, and integration complexity. We handle fund formation, manager onboarding, custody setup, and proposal tool deployment in parallel. Most firms start seeing client adoption within 90 days of launch. Full-scale deployment (branded funds, integrated reporting, advisor training complete) usually takes 9-12 months.",
       },
     ],
   },
   ctaSection: {
     id: "cta",
-    title: "Automate. Simplify. Thrive",
+    title: "Let's Explore What Your Top-5% Alternatives Platform Could Look Like",
     backgroundImage: "/agent-cta-background.png",
     button: {
-      text: "Start Your 30-Day Free Trial Today",
+      text: "Schedule a Working Session",
       href: "#",
     },
-    subtext: "Cancel anytime, no questions asked",
+    subtext: "60-minute platform design workshop—no obligations, just insights",
   },
   footerLinks: [
     {
-      title: "Company",
+      title: "Platform",
       links: [
-        { id: 1, title: "About", url: "#" },
-        { id: 2, title: "Contact", url: "#" },
-        { id: 3, title: "Blog", url: "#" },
-        { id: 4, title: "Story", url: "#" },
-      ],
-    },
-    {
-      title: "Products",
-      links: [
-        { id: 5, title: "Company", url: "#" },
-        { id: 6, title: "Product", url: "#" },
-        { id: 7, title: "Press", url: "#" },
-        { id: 8, title: "More", url: "#" },
+        { id: 1, title: "Custom Evergreen Funds", url: "#" },
+        { id: 2, title: "Portable Alpha", url: "#" },
+        { id: 3, title: "Proposal Tools", url: "#" },
+        { id: 4, title: "For Clients", url: "/client-explainer" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { id: 9, title: "Press", url: "#" },
-        { id: 10, title: "Careers", url: "#" },
-        { id: 11, title: "Newsletters", url: "#" },
-        { id: 12, title: "More", url: "#" },
+        { id: 5, title: "Case Studies", url: "#" },
+        { id: 6, title: "Thought Leadership", url: "#" },
+        { id: 7, title: "Manager Selection", url: "#" },
+        { id: 8, title: "Educational Content", url: "#" },
+      ],
+    },
+    {
+      title: "Company",
+      links: [
+        { id: 9, title: "About Equi", url: "#" },
+        { id: 10, title: "Our Approach", url: "#" },
+        { id: 11, title: "Partnership Model", url: "#" },
+        { id: 12, title: "Contact", url: "#" },
       ],
     },
   ],
