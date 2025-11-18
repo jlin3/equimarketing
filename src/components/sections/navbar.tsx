@@ -121,11 +121,11 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-3">
               {mounted && (
                 <Image
-                  src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-BLACK.png"}
+                  src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-DARK.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
                   alt="Equi Logo"
-                  width={120}
-                  height={32}
-                  className="h-8 w-auto"
+                  width={140}
+                  height={38}
+                  className="h-9 w-auto object-contain"
                   priority
                 />
               )}
@@ -185,11 +185,11 @@ export function Navbar() {
                   <Link href="/" className="flex items-center gap-3">
                     {mounted && (
                       <Image
-                        src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-BLACK.png"}
+                        src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-DARK.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
                         alt="Equi Logo"
-                        width={100}
-                        height={28}
-                        className="h-7 w-auto"
+                        width={120}
+                        height={33}
+                        className="h-8 w-auto object-contain"
                       />
                     )}
                   </Link>
