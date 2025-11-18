@@ -491,6 +491,49 @@ export const siteConfig = {
       image: "/Device-1.png",
     },
   ],
+  hedgeFundBenefits: {
+    title: "Why Hedge Fund Alternatives for Your RIA Clients?",
+    description:
+      "Institutional strategies designed to deliver absolute returns and portfolio stability across market cycles.",
+    benefits: [
+      {
+        id: 1,
+        title: "Genuine Diversification",
+        description:
+          "True uncorrelation from public markets—not rebranded beta or closet indexing. Mid-market hedge strategies provide structural alpha through illiquidity premia, volatility harvesting, and market dislocations unavailable in mutual funds.",
+      },
+      {
+        id: 2,
+        title: "Downside Protection",
+        description:
+          "Absolute return focus with risk management overlays. Target positive returns in all market environments while preserving capital during downturns. Historical evidence shows quality hedge strategies reduce portfolio drawdowns by 30-50% vs equity-only portfolios.",
+      },
+      {
+        id: 3,
+        title: "Enhanced Risk-Adjusted Returns",
+        description:
+          "Higher Sharpe ratios through diversified alpha sources: long-short equity, global macro, relative value, and niche credit. Portable alpha structures allow equity-like returns with materially better risk profiles.",
+      },
+      {
+        id: 4,
+        title: "Behavioral Alpha for Clients",
+        description:
+          "Portfolios that hold up better in corrections mean clients stay invested. Reducing behavioral mistakes (panic selling) creates compounding value over time. Smoother ride = better long-term outcomes.",
+      },
+      {
+        id: 5,
+        title: "Institutional Access, Retail Structure",
+        description:
+          "Mid-market managers ($100M-$2B AUM) typically closed to individual RIAs. Evergreen structure with periodic liquidity, 1099 tax treatment, and minimums suitable for mass-affluent clients ($100K-$500K accounts).",
+      },
+      {
+        id: 6,
+        title: "Second Revenue Line for Your Firm",
+        description:
+          "Revenue participation creates aligned incentives and enterprise value. Top-performing RIA alternatives programs contribute 15-25% of firm revenue within 3-5 years. Transform from fee-only to institutional asset manager.",
+      },
+    ],
+  },
   growthSection: {
     title: "Institutional Outcomes, Retail Implementation",
     description:
