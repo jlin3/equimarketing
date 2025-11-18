@@ -8,13 +8,13 @@ export function TestimonialSection() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col items-center justify-center w-full"
+      className="flex flex-col items-center justify-center w-full animate-in fade-in duration-700"
     >
       <SectionHeader>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-center text-balance">
           Transform Your Investment Team from a Cost Center to a Profit Center
         </h2>
-        <p className="text-muted-foreground text-center text-balance font-medium">
+        <p className="text-muted-foreground text-center text-balance font-medium max-w-3xl mx-auto">
           Build your own branded alternatives program and capture management fees instead of just allocating to external products. Deliver better client outcomes while creating enterprise value and a meaningful revenue stream for your firm.
         </p>
       </SectionHeader>
