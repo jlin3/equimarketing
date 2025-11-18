@@ -11,7 +11,7 @@ import { AnimatePresence, motion, useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 export function ReasoningBasic() {
-  const reasoningText = `Based on your calendar patterns and preferences, I recommend scheduling the team meeting for Tuesday at 2pm. This time slot has historically had the highest attendance rate, and it avoids conflicts with other recurring meetings.`;
+  const reasoningText = `For your income-focused client segment, I recommend a custom evergreen fund blending 15 mid-market strategies: 40% diversified hedge (long-short equity, macro), 35% niche credit (asset-backed, specialty finance), 25% relative value. Target: 6-8% net returns with max 8% drawdowns. SMA wrapper for transparency. Aligns with your IPS language and client risk profiles.`;
 
   return (
     <Reasoning>
@@ -70,8 +70,7 @@ export function FirstBentoAnimation() {
             }}
           >
             <p className="text-sm">
-              Hey, I need help scheduling a team meeting that works well for
-              everyone. Any suggestions for finding an optimal time slot?
+              Design a custom evergreen fund for our income-focused clients. Target 6-8% returns with low correlation to equities. Need SMA structure for transparency.
             </p>
           </motion.div>
           <div className="flex items-center bg-background rounded-full w-fit border border-border flex-shrink-0">

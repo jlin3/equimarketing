@@ -16,15 +16,15 @@ interface BoxConfig {
 
 const boxConfigs: BoxConfig[] = [
   {
-    title: "Bento grid",
+    title: "Institutional Pricing",
     className: "bg-secondary text-white",
   },
   {
-    title: "Landing Page",
+    title: "Revenue Participation",
     className: "bg-secondary/40 text-white",
   },
   {
-    title: "Add Task",
+    title: "No Feeders",
     className:
       "bg-secondary/20 border border-secondary border-dashed text-secondary",
   },
@@ -175,17 +175,17 @@ export function FourthBentoAnimation({
         </div>
       </div>
 
-      {/* Days of the week */}
-      <div className="absolute top-4 left-0 right-0 flex justify-between max-w-md mx-auto px-8 text-sm text-gray-500">
-        <span>Tue</span>
-        <span>Wed</span>
-        <span>Thu</span>
-        <span>Fri</span>
-        <span>Sat</span>
+      {/* Fee Structure Labels */}
+      <div className="absolute top-4 left-0 right-0 flex justify-between max-w-md mx-auto px-8 text-sm text-muted-foreground">
+        <span>Transparent</span>
+        <span>Aligned</span>
+        <span>Fair</span>
+        <span>Simple</span>
+        <span>Honest</span>
       </div>
 
       <motion.div
-        className="absolute top-10 w-[2px] h-[calc(100%-80px)] bg-gradient-to-b from-black dark:from-accent to-transparent z-10"
+        className="absolute top-10 w-[2px] h-[calc(100%-80px)] bg-gradient-to-b from-secondary dark:from-accent to-transparent z-10"
         style={{
           x: smoothX,
           translateX: "-50%",
@@ -200,7 +200,7 @@ export function FourthBentoAnimation({
         }}
       />
       <motion.div
-        className="absolute top-14 bg-black dark:bg-accent h-6 z-20 flex items-center justify-center text-xs p-2 rounded-md shadow-[0px_2.2px_6.6px_0px_rgba(18,43,105,0.04),0px_1.1px_2.2px_0px_rgba(18,43,105,0.08),0px_0px_0px_1.1px_rgba(18,43,105,0.08),0px_1.1px_0px_0px_rgba(255,255,255,0.20)_inset,0px_4.4px_6.6px_0px_rgba(255,255,255,0.01)_inset]"
+        className="absolute top-14 bg-secondary dark:bg-accent h-6 z-20 flex items-center justify-center text-xs px-3 py-1 rounded-md shadow-[0px_2.2px_6.6px_0px_rgba(18,43,105,0.04),0px_1.1px_2.2px_0px_rgba(18,43,105,0.08),0px_0px_0px_1.1px_rgba(18,43,105,0.08),0px_1.1px_0px_0px_rgba(255,255,255,0.20)_inset,0px_4.4px_6.6px_0px_rgba(255,255,255,0.01)_inset]"
         style={{
           x: smoothX,
           translateX: "-50%",
@@ -214,7 +214,7 @@ export function FourthBentoAnimation({
           default: { duration: 0 }, // Makes position update instant
         }}
       >
-        <span className="text-white">12:00 AM</span>
+        <span className="text-white font-medium">Your Advantage</span>
       </motion.div>
 
       <div

@@ -317,12 +317,12 @@ export const siteConfig = {
     subtitle: "As of Q4 2025",
     metrics: [
       {
-        value: "30-40",
+        value: "35+",
         label: "Manager Relationships",
         sublabel: "Small to midsize strategies",
       },
       {
-        value: "50-100",
+        value: "75+",
         label: "Strategies Covered",
         sublabel: "Diversified hedge & niche credit",
       },
@@ -332,8 +332,8 @@ export const siteConfig = {
         sublabel: "On track for institutional scale",
       },
       {
-        value: "6-12mo",
-        label: "Platform Launch",
+        value: "9mo",
+        label: "Avg Platform Launch",
         sublabel: "Workshop to funded program",
       },
     ],
