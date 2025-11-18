@@ -121,7 +121,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-3">
               {mounted && (
                 <Image
-                  src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-DARK.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
+                  src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
                   alt="Equi Logo"
                   width={140}
                   height={38}
@@ -185,7 +185,7 @@ export function Navbar() {
                   <Link href="/" className="flex items-center gap-3">
                     {mounted && (
                       <Image
-                        src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-DARK.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
+                        src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
                         alt="Equi Logo"
                         width={120}
                         height={33}

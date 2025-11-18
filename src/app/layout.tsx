@@ -39,7 +39,7 @@ export default function RootLayout({
     name: "Equi",
     alternateName: "Equi Alternatives Platform",
     url: siteConfig.url,
-    logo: `${siteConfig.url}/logos/EQUI-LOGO-SM-HZ-LIGHT.png`,
+    logo: `${siteConfig.url}/logos/EQUI-LOGO-SM-HZ-WHITE.png`,
     description: siteConfig.description,
     slogan: "Your Institutional-Grade Alternatives Program, White Labeled to Your Brand",
     foundingDate: "2023",
