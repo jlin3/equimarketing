@@ -26,7 +26,7 @@ export function CTASection() {
             <div className="absolute bottom-10 flex flex-col items-center justify-center gap-2">
               <Link
                 href={ctaSection.button.href}
-                className="bg-white text-black font-semibold text-sm h-10 w-fit px-4 rounded-full flex items-center justify-center shadow-md"
+                className="bg-white text-black font-semibold text-sm h-11 w-fit min-w-[200px] px-6 rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-all ease-out active:scale-95 whitespace-nowrap"
               >
                 {ctaSection.button.text}
               </Link>

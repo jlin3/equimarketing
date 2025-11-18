@@ -7,6 +7,8 @@ import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion, useScroll } from "motion/react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -52,9 +54,15 @@ const drawerMenuVariants = {
 
 export function Navbar() {
   const { scrollY } = useScroll();
+  const { theme, resolvedTheme } = useTheme();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,8 +120,16 @@ export function Navbar() {
         >
           <div className="flex h-[56px] items-center justify-between p-4">
             <Link href="/" className="flex items-center gap-3">
-              <Icons.logo className="size-7 md:size-10" />
-              <p className="text-lg font-semibold text-primary">SkyAgent</p>
+              {mounted && (
+                <Image
+                  src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-BLACK.png"}
+                  alt="Equi Logo"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto"
+                  priority
+                />
+              )}
             </Link>
 
             <NavMenu />
@@ -121,10 +137,10 @@ export function Navbar() {
             <div className="flex flex-row items-center gap-1 md:gap-3 shrink-0">
               <div className="flex items-center space-x-6">
                 <Link
-                  className="bg-secondary h-8 hidden md:flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-fit px-4 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12]"
+                  className="bg-secondary h-8 hidden md:flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-fit px-5 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12] whitespace-nowrap"
                   href="#"
                 >
-                  Try for free
+                  Book a Demo
                 </Link>
               </div>
               <ThemeToggle />
@@ -168,10 +184,15 @@ export function Navbar() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="flex items-center gap-3">
-                    <Icons.logo className="size-7 md:size-10" />
-                    <p className="text-lg font-semibold text-primary">
-                      SkyAgent
-                    </p>
+                    {mounted && (
+                      <Image
+                        src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-BLACK.png"}
+                        alt="Equi Logo"
+                        width={100}
+                        height={28}
+                        className="h-7 w-auto"
+                      />
+                    )}
                   </Link>
                   <button
                     onClick={toggleDrawer}
@@ -219,9 +240,9 @@ export function Navbar() {
                 <div className="flex flex-col gap-2">
                   <Link
                     href="#"
-                    className="bg-secondary h-8 flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-full px-4 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12] hover:bg-secondary/80 transition-all ease-out active:scale-95"
+                    className="bg-secondary h-9 flex items-center justify-center text-sm font-normal tracking-wide rounded-full text-primary-foreground dark:text-secondary-foreground w-full px-5 shadow-[inset_0_1px_2px_rgba(255,255,255,0.25),0_3px_3px_-1.5px_rgba(16,24,40,0.06),0_1px_1px_rgba(16,24,40,0.08)] border border-white/[0.12] hover:bg-secondary/80 transition-all ease-out active:scale-95 whitespace-nowrap"
                   >
-                    Try for free
+                    Book a Demo
                   </Link>
                 </div>
               </div>

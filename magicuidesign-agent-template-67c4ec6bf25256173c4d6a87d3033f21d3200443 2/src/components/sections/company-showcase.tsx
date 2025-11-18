@@ -1,33 +1,67 @@
+"use client";
+
 import { siteConfig } from "@/lib/config";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Play } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 
 export function CompanyShowcase() {
   const { companyShowcase } = siteConfig;
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
+
   return (
     <section
       id="company"
-      className="flex flex-col items-center justify-center gap-10 py-10 pt-20 w-full relative px-6"
+      className="flex flex-col items-center justify-center gap-10 py-20 w-full relative px-6"
     >
-      <p className="text-muted-foreground font-medium">
-        Trusted by fast-growing startups
-      </p>
-      <div className="grid w-full max-w-7xl grid-cols-2 md:grid-cols-4 overflow-hidden border-y border-border items-center justify-center z-20">
-        {companyShowcase.companyLogos.map((logo) => (
-          <Link
-            href="#"
-            className="group w-full h-28 flex items-center justify-center relative p-4 before:absolute before:-left-1 before:top-0 before:z-10 before:h-screen before:w-px before:bg-border before:content-[''] after:absolute after:-top-1 after:left-0 after:z-10 after:h-px after:w-screen after:bg-border after:content-['']"
-            key={logo.id}
+      <div className="flex flex-col items-center justify-center gap-4 max-w-3xl text-center">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          {companyShowcase.title}
+        </h2>
+        <p className="text-muted-foreground text-lg">
+          {companyShowcase.description}
+        </p>
+      </div>
+
+      <div className="grid w-full max-w-7xl grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 z-20">
+        {companyShowcase.partners.map((partner) => (
+          <div
+            key={partner.id}
+            className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-secondary/50"
+            onMouseEnter={() => setHoveredId(partner.id)}
+            onMouseLeave={() => setHoveredId(null)}
           >
-            <div className="transition-all duration-200 [cubic-bezier(0.165, 0.84, 0.44, 1)] translate-y-0 group-hover:-translate-y-4 duration-300 flex items-center justify-center w-full h-full">
-              {logo.logo}
+            {/* Video Thumbnail */}
+            <div className="relative aspect-video overflow-hidden">
+              <Image
+                src={partner.videoThumbnail}
+                alt={`${partner.name} video thumbnail`}
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              {/* Play Button Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors duration-300 group-hover:bg-black/40">
+                <div className="flex items-center justify-center size-16 rounded-full bg-white/90 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-secondary">
+                  <Play className="size-6 fill-black text-black transition-colors duration-300 group-hover:fill-white group-hover:text-white ml-1" />
+                </div>
+              </div>
             </div>
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-4 transition-all duration-300 ease-[cubic-bezier(0.165, 0.84, 0.44, 1)]">
-              <span className="flex items-center gap-2 text-sm font-medium">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </span>
+
+            {/* Content */}
+            <div className="p-6 space-y-2">
+              <h3 className="text-xl font-semibold">{partner.name}</h3>
+              <p className="text-sm text-muted-foreground">
+                {partner.description}
+              </p>
             </div>
-          </Link>
+
+            {/* Watch Now Link */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 pt-0">
+              <button className="text-sm font-medium text-secondary hover:underline transition-all">
+                Watch Story →
+              </button>
+            </div>
+          </div>
         ))}
       </div>
     </section>

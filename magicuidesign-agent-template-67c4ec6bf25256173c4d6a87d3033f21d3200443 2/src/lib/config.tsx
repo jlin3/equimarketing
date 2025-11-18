@@ -31,7 +31,7 @@ export const BLUR_FADE_DELAY = 0.15;
 export const siteConfig = {
   name: "Equi",
   description: "Institutional-grade liquid alternatives and portable alpha programs for RIAs.",
-  cta: "Talk to Our Team",
+  cta: "Book a Demo",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: [
     "Portable Alpha",
@@ -70,13 +70,13 @@ export const siteConfig = {
         <path d="M2.37845 10.5993L2.57045 10.4893L6.88445 12.9533C7.22435 13.1474 7.60901 13.2496 8.00045 13.2496C8.39189 13.2496 8.77656 13.1474 9.11645 12.9533L13.4305 10.4883L13.6225 10.5983C13.7374 10.6638 13.833 10.7586 13.8994 10.8731C13.9659 10.9875 14.0009 11.1175 14.0009 11.2498C14.0009 11.3821 13.9659 11.5121 13.8994 11.6265C13.833 11.7409 13.7374 11.8357 13.6225 11.9013L8.37245 14.9013C8.25915 14.966 8.13093 15 8.00045 15C7.86997 15 7.74175 14.966 7.62845 14.9013L2.37845 11.9013C2.2635 11.8357 2.16795 11.7409 2.10148 11.6265C2.03501 11.5121 2 11.3821 2 11.2498C2 11.1175 2.03501 10.9875 2.10148 10.8731C2.16795 10.7586 2.2635 10.6638 2.37845 10.5983V10.5993Z" />
       </svg>
     ),
-    badge: "Institutional-grade alternatives for RIAs",
-    title: "Build a top-tier alternatives platform without becoming an asset manager",
+    badge: "Institutional alternatives for RIAs",
+    title: "Customize a top-tier hedge fund alternatives platform",
     description:
-      "Equi designs, runs, and supports institutional-grade liquid alternatives and portable alpha programs for RIAs — including the proposal tools and education your advisors need to actually use them.",
+      "Custom liquid alternatives and portable alpha programs—designed, operated, and scaled by Equi. Your brand, your clients, institutional outcomes.",
     cta: {
       primary: {
-        text: "Talk to Our Team",
+        text: "Book a Demo",
         href: "#",
       },
       secondary: {
@@ -86,6 +86,31 @@ export const siteConfig = {
     },
   },
   companyShowcase: {
+    title: "Trusted by Leading RIAs",
+    description: "Powering alternatives platforms for wealth managers nationwide",
+    partners: [
+      {
+        id: 1,
+        name: "WealthPlan",
+        description: "Building institutional-grade alternatives for wealth management",
+        videoThumbnail: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2070&auto=format&fit=crop",
+        videoUrl: "#",
+      },
+      {
+        id: 2,
+        name: "MCM",
+        description: "Delivering portable alpha solutions to high-net-worth clients",
+        videoThumbnail: "https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=2070&auto=format&fit=crop",
+        videoUrl: "#",
+      },
+      {
+        id: 3,
+        name: "Strategic Advisors",
+        description: "Scaling alternatives programs with Equi's platform",
+        videoThumbnail: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop",
+        videoUrl: "#",
+      },
+    ],
     companyLogos: [
       {
         id: 1,
@@ -287,15 +312,15 @@ export const siteConfig = {
     ],
   },
   featureSection: {
-    title: "From First Conversation to Funded Program",
+    title: "From Design Workshop to Funded Program",
     description:
-      "Four steps to building your institutional-grade alternatives platform — with Equi as your co-engineer.",
+      "Four stages to launch—typically 6-12 months start to finish.",
     items: [
       {
         id: 1,
         title: "Design the Mandate",
         content:
-          "We start with your client mix, models, and ambitions. Define your starting track: income-oriented evergreen, portable alpha growth, or pure alpha diversifier. Map out AUM milestones and revenue targets that align with your firm's strategic goals.",
+          "We map your client mix, models, and ambitions to the right starting track—income evergreen, portable alpha growth, or pure alpha diversifier. You walk away with AUM milestones and revenue projections.",
         image:
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
@@ -303,46 +328,46 @@ export const siteConfig = {
         id: 2,
         title: "Build Structure & Select Managers",
         content:
-          "Choose regulatory wrapper and structure. Select and blend 15-30 underlying strategies across hedge and niche credit, with SMA usage where possible. Engineer the volatility, return, and drawdown profile to fit your models and client risk language.",
+          "We choose the regulatory wrapper and blend 15-30 underlying strategies—hedge and niche credit, with SMA preference. We engineer the volatility and drawdown profile to fit your IPS language.",
         image:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 3,
-        title: "Integrate with Tech and Proposals",
+        title: "Integrate Tech & Deploy Proposals",
         content:
-          "Custody and reporting integration so funds show up cleanly on statements. Deploy advisor-branded proposal tool with efficient frontier and bear-market views. Establish automated quarterly updates and evergreen educational content for your advisors.",
+          "Custody and reporting integration so funds appear cleanly on statements. We deploy your advisor-branded proposal tool with efficient frontier and bear-market views, plus quarterly updates and educational content.",
         image:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         id: 4,
-        title: "Outcomes at Scale",
+        title: "Scale to Top-5% Program",
         content:
-          "In 3-5 years: portfolios clients stay invested in, a top-5% marketable alternatives program, and a material fund P&L alongside advisory fees. Your CIO gets time back from vendor wrangling, your advisors get simple toggles, and your clients get better outcomes.",
+          "In 3-5 years: portfolios clients stay invested in, a marketable alternatives program in the top decile, and a material fund P&L. Your CIO gets time back, your advisors get confidence, your clients get outcomes.",
         image:
           "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
   },
   bentoSection: {
-    title: "The Alternatives Engine Behind Next-Generation RIAs",
+    title: "Built Different from the Ground Up",
     description:
-      "Three product pillars plus the proposal stack that drives adoption — designed to deliver institutional outcomes with retail-ready implementation.",
+      "Not a feeder platform. Not a product shelf. A custom alternatives engine designed around your firm's economics and client outcomes.",
     items: [
       {
         id: 1,
         content: <FirstBentoAnimation />,
         title: "Custom Evergreen Funds",
         description:
-          "White-labeled growth, income, and pure alpha strategies built from mid-market managers. Mostly uncorrelated, evergreen vehicles designed around liquidity and minimums that work for your client base.",
+          "White-labeled strategies built from mid-market managers. Genuinely uncorrelated vehicles with liquidity and minimums designed for your client base.",
       },
       {
         id: 2,
         content: <SecondBentoAnimation />,
         title: "Portable Alpha for Equity Sleeves",
         description:
-          "Enhanced equity that replicates your benchmark while overlaying diversified alpha. Full upside participation with limited downside — behaves like equity in your IPS, acts like risk-controlled alpha under the hood.",
+          "Enhanced equity that replicates your benchmark while overlaying diversified alpha. Equity-like returns with materially better downside protection.",
       },
       {
         id: 3,
@@ -356,14 +381,14 @@ export const siteConfig = {
         ),
         title: "Proposal & Education Toolkit",
         description:
-          "Advisor-branded proposals with efficient frontier, bear-market scenarios, and Monte Carlo views. Plain-English explainers that translate hedge-fund mechanics into stories advisors actually want to tell.",
+          "Advisor-branded proposals with efficient frontier and bear-market scenarios. Plain-English explainers that turn complex strategies into client-ready stories.",
       },
       {
         id: 4,
         content: <FourthBentoAnimation once={false} />,
-        title: "Aligned Incentives",
+        title: "Aligned Economics, No Kickbacks",
         description:
-          "No feeders, no kickbacks, no single-manager hero bets. We negotiate fee breaks with mid-market managers and pass savings through. Your firm participates in economics, building a second P&L alongside advisory fees.",
+          "No feeders, no distribution fees, no single-manager hero bets. We negotiate institutional pricing and pass savings through. Your firm shares in economics—a real second revenue line.",
       },
     ],
   },
@@ -390,9 +415,9 @@ export const siteConfig = {
     },
   ],
   growthSection: {
-    title: "Institutional Outcomes, Retail-Ready Design",
+    title: "Institutional Outcomes, Retail Implementation",
     description:
-      "Where sophisticated strategy meets practical implementation — designed to deliver uncorrelated returns while maintaining the liquidity and transparency your clients need.",
+      "Sophisticated strategies engineered for genuine uncorrelation with the liquidity and transparency your clients require.",
     items: [
       {
         id: 1,
@@ -672,9 +697,9 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Uncorrelated Strategies at Scale",
+        title: "Mid-Market Manager Access",
         description:
-          "Access mid-market managers typically unavailable to individual RIAs. Diversified hedge and niche credit strategies engineered for genuine uncorrelation, not beta in disguise.",
+          "Diversified hedge and niche credit strategies from managers typically unavailable to individual RIAs—engineered for genuine uncorrelation, not rebranded beta.",
       },
       {
         id: 2,
@@ -684,15 +709,15 @@ export const siteConfig = {
           </div>
         ),
 
-        title: "Scalable Platform Architecture",
+        title: "Built to Scale with You",
         description:
-          "From emerging RIAs to multi-billion dollar firms. Evergreen structure with liquidity and minimums that work for mass-affluent clients, not just ultra-high-net-worth. Grow your program as your AUM scales.",
+          "Evergreen structure with liquidity and minimums for mass-affluent clients—from $200M RIAs to multi-billion dollar firms.",
       },
     ],
   },
   quoteSection: {
     quote:
-      "Equi gave us a top-5% alternatives platform without hiring a full asset-management team. Our clients get institutional-grade strategies with retail-ready liquidity, and our firm built a meaningful second revenue stream. It's transformed how we compete for sophisticated clients.",
+      "Equi gave us a top-5% alternatives platform without the overhead of building an asset management arm. Our clients get institutional strategies with retail liquidity, and we built a real second revenue line. It's transformed how we compete.",
     author: {
       name: "Michael Chen",
       role: "CIO, Summit Wealth Management",
@@ -700,9 +725,9 @@ export const siteConfig = {
     },
   },
   pricing: {
-    title: "Engagement Models that Fit Your Scale",
+    title: "Three Ways to Engage",
     description:
-      "From exploratory design sessions to fully-managed platforms, Equi partners with RIAs at every stage of alternatives adoption.",
+      "From exploratory CIO workshops to fully-managed custom platforms—we partner at every stage.",
     pricingItems: [
       {
         name: "Platform Design Workshop",
@@ -711,13 +736,13 @@ export const siteConfig = {
         period: "engagement",
         yearlyPrice: "Custom",
         features: [
-          "60-90 minute design workshop",
+          "60-90 minute design session",
           "Client mix & model analysis",
           "Revenue projection modeling",
           "Preliminary manager recommendations",
           "Platform architecture blueprint",
         ],
-        description: "For RIAs exploring alternatives platforms",
+        description: "For RIAs exploring alternatives",
         buttonText: "Schedule Workshop",
         buttonColor: "bg-accent text-primary",
         isPopular: false,
@@ -738,8 +763,8 @@ export const siteConfig = {
           "White-label fund administration",
           "Investment committee support",
         ],
-        description: "Full-service platform for serious adopters",
-        buttonText: "Talk to Our Team",
+        description: "Full-service platform ($500M+ RIAs)",
+        buttonText: "Book a Demo",
         buttonColor: "bg-secondary text-white",
         isPopular: true,
       },
@@ -756,7 +781,7 @@ export const siteConfig = {
           "Co-branded marketing materials",
           "Dedicated relationship management",
         ],
-        description: "For multi-billion dollar RIAs building distinct alternatives arms",
+        description: "For multi-billion dollar firms",
         buttonText: "Discuss Partnership",
         buttonColor: "bg-primary text-primary-foreground",
         isPopular: false,
@@ -967,55 +992,55 @@ export const siteConfig = {
   faqSection: {
     title: "Frequently Asked Questions",
     description:
-      "Answers to common questions about Equi's alternatives platform and how we partner with RIAs. If you have additional questions, our team is here to help.",
+      "Direct answers to common questions about how Equi partners with RIAs to build alternatives programs.",
     faQitems: [
       {
         id: 1,
-        question: "What is portable alpha?",
+        question: "How is Equi different from iCapital or CAIS?",
         answer:
-          "Portable alpha is a strategy that separates beta (market exposure) from alpha (excess return). We replicate your equity benchmark efficiently using derivatives, then allocate freed-up capital to diversified hedge and credit strategies. The result: equity-like returns with better downside protection. To your clients, it's enhanced equity. To your investment committee, it's institutional-grade risk management.",
+          "We're not a feeder platform—we don't take distribution kickbacks or push crowded funds. We build custom evergreen vehicles for your firm using mid-market managers ($100M-$2B AUM) where alpha sources remain durable. We negotiate institutional pricing and pass savings through. Your firm participates in economics, creating a real second P&L. We're your co-engineer, not your product distributor.",
       },
       {
         id: 2,
-        question: "How is Equi different from iCapital, CAIS, or other platforms?",
+        question: "What's the minimum to work with Equi?",
         answer:
-          "We're not a feeder platform. We don't take distribution kickbacks or push crowded funds. Instead, we build custom evergreen vehicles for your firm using mid-market managers (typically $100M-$2B AUM) where alpha hasn't melted into beta. We negotiate fee breaks and pass savings through. Your firm participates in economics, creating a second P&L alongside advisory fees. We're your co-engineer, not your product distributor.",
+          "For a full managed platform, we typically work with RIAs managing $500M+ and able to commit $25M+ to alternatives over 18-24 months. For firms in the $200M-$500M range with strong growth, we offer Platform Design Workshops to map a roadmap.",
       },
       {
         id: 3,
-        question: "What's the minimum AUM to work with Equi?",
+        question: "How do fees work?",
         answer:
-          "For a full managed platform with custom fund structure, we typically work with RIAs managing $500M+ in AUM. For firms in the $200M-$500M range with strong growth trajectories, we offer our Platform Design Workshop to map out a roadmap. The economics make most sense when you can commit $25M+ to an alternatives program over 18-24 months.",
+          "AUM-based model covering manager selection, due diligence, portfolio construction, fund admin, reporting, and advisor education. We negotiate institutional fee breaks with underlying managers and pass savings through. Total cost resembles a single institutional product, not stacked fees. We'll model exact structure in your design workshop.",
       },
       {
         id: 4,
-        question: "How do fees work?",
+        question: "What is portable alpha?",
         answer:
-          "We use an AUM-based model aligned with program growth. Fees cover manager selection, due diligence, portfolio construction, fund administration, reporting, and advisor education. We negotiate institutional fee breaks with underlying managers and pass those savings through. Total all-in cost typically resembles a single institutional product, not fees stacked on fees. Exact structure depends on your program size and complexity—we'll model it in your design workshop.",
+          "A strategy that separates beta (market exposure) from alpha (excess return). We replicate your equity benchmark using derivatives, then allocate freed-up capital to diversified hedge and credit strategies. Result: equity-like returns with better downside protection. Your clients see enhanced equity. Your investment committee sees institutional risk management.",
       },
       {
         id: 5,
-        question: "What types of managers do you use?",
+        question: "What managers do you use?",
         answer:
-          "We focus on mid-market managers: big enough to be institutional (track record, infrastructure, compliance) but small enough that alpha sources remain durable. Typical range: $100M-$2B AUM. Strategies span diversified hedge (equity long-short, macro, relative value) and niche credit (asset-backed, structured, specialty finance). We prefer SMAs for transparency and control. Manager selection emphasizes genuine uncorrelation and structural alpha sources—illiquidity premia, dislocations, volatility harvesting—not hot themes.",
+          "Mid-market managers: institutional track record and infrastructure, but small enough that alpha sources stay durable ($100M-$2B AUM). Strategies span diversified hedge (long-short, macro, relative value) and niche credit (asset-backed, structured, specialty finance). We prefer SMAs for transparency. Selection emphasizes structural alpha—illiquidity premia, dislocations, volatility harvesting—not hot themes.",
       },
       {
         id: 6,
-        question: "How long does it take to launch a program?",
+        question: "How long to launch?",
         answer:
-          "From first workshop to funded program: typically 6-12 months. Timeline depends on regulatory structure choice, AUM ramp expectations, and integration complexity. We handle fund formation, manager onboarding, custody setup, and proposal tool deployment in parallel. Most firms start seeing client adoption within 90 days of launch. Full-scale deployment (branded funds, integrated reporting, advisor training complete) usually takes 9-12 months.",
+          "First workshop to funded program: 6-12 months. We handle fund formation, manager onboarding, custody setup, and proposal tools in parallel. Most firms see client adoption within 90 days of launch. Full deployment (branded funds, integrated reporting, advisor training) typically takes 9-12 months.",
       },
     ],
   },
   ctaSection: {
     id: "cta",
-    title: "Let's Explore What Your Top-5% Alternatives Platform Could Look Like",
+    title: "Let's Design Your Alternatives Platform",
     backgroundImage: "/agent-cta-background.png",
     button: {
-      text: "Schedule a Working Session",
+      text: "Schedule a Workshop",
       href: "#",
     },
-    subtext: "60-minute platform design workshop—no obligations, just insights",
+    subtext: "60-minute design session—no obligations, just a roadmap",
   },
   footerLinks: [
     {
