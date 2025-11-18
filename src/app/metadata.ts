@@ -106,7 +106,7 @@ export const metadata: Metadata = {
     siteName: "Equi",
     images: [
       {
-        url: `${siteConfig.url}/agent-template-og.png`,
+        url: `${siteConfig.url}/opengraph-image`,
         width: 1200,
         height: 630,
         alt: "Equi - Custom Hedge Fund Programs for RIA CIOs",
@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     title: "Equi - Custom Hedge Fund Programs for RIA CIOs",
     description: "Build your white-labeled alternatives platform with custom hedge funds, portable alpha & mid-market managers. Not a marketplace—your custom builder.",
     creator: "@equi",
-    images: [`${siteConfig.url}/agent-template-og.png`],
+    images: [`${siteConfig.url}/opengraph-image`],
   },
   robots: {
     index: true,

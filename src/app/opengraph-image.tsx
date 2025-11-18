@@ -25,20 +25,34 @@ export default async function Image() {
             height: "100%",
             width: "100%",
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            background: "black",
+            background: "linear-gradient(135deg, #000000 0%, #1a1a1a 100%)",
+            padding: "80px",
           }}
         >
           <img
-            src={`${baseUrl}/agent-template-og.png`}
-            alt={alt}
+            src={`${baseUrl}/logos/EQUI-LOGO-SM-HZ-WHITE.png`}
+            alt="Equi Logo"
             style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
+              width: "400px",
+              height: "auto",
+              marginBottom: "40px",
             }}
           />
+          <div
+            style={{
+              fontSize: "48px",
+              fontWeight: "bold",
+              color: "white",
+              textAlign: "center",
+              maxWidth: "900px",
+              lineHeight: "1.3",
+            }}
+          >
+            {alt}
+          </div>
         </div>
       ),
       { ...size },

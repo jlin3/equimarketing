@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Icons } from "@/components/icons";
 import {
   Reasoning,
   ReasoningContent,
   ReasoningResponse,
 } from "@/components/ui/reasoning";
 import { AnimatePresence, motion, useInView } from "motion/react";
+import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
 
 export function ReasoningBasic() {
@@ -26,6 +26,7 @@ export function FirstBentoAnimation() {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const [shouldAnimate, setShouldAnimate] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     let timeoutId: NodeJS.Timeout;
@@ -82,8 +83,12 @@ export function FirstBentoAnimation() {
           </div>
         </div>
         <div className="flex items-start gap-2">
-          <div className="flex items-center bg-background rounded-full size-10 flex-shrink-0 justify-center shadow-[0_0_10px_rgba(0,0,0,0.05)] border border-border">
-            <Icons.logo className="size-4" />
+          <div className="flex items-center bg-background rounded-full size-10 flex-shrink-0 justify-center shadow-[0_0_10px_rgba(0,0,0,0.05)] border border-border overflow-hidden">
+            <img
+              src={resolvedTheme === "dark" ? "/logos/EQUI-LOGO-SM-HZ-WHITE.png" : "/logos/EQUI-LOGO-SM-HZ-LIGHT.png"}
+              alt="Equi Logo"
+              className="size-6 object-contain"
+            />
           </div>
 
           <div className="relative">
