@@ -46,16 +46,24 @@ export function FounderSection() {
             transition={{ duration: 0.5, delay: BLUR_FADE_DELAY * (index + 3) }}
           >
             {/* Video Section */}
-            <div className="relative aspect-video bg-gradient-to-br from-secondary/20 to-primary/10 overflow-hidden">
+            <div className="relative aspect-video bg-gradient-to-br from-secondary/20 to-primary/10 overflow-hidden group/video">
               <video
                 className="w-full h-full object-cover"
-                poster={`${founder.videoUrl.replace('.mp4', '')}-poster.jpg`}
                 controls
                 preload="metadata"
+                poster=""
               >
                 <source src={founder.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              {/* Custom play button overlay - shows before video loads */}
+              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary/30 to-primary/20 pointer-events-none group-hover/video:opacity-0 transition-opacity duration-300">
+                <div className="size-20 rounded-full bg-white/95 flex items-center justify-center shadow-2xl">
+                  <svg className="size-8 text-secondary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
             </div>
 
             {/* Content Section */}
