@@ -1,8 +1,7 @@
 "use client";
 
 import { siteConfig } from "@/lib/config";
-import { Play } from "lucide-react";
-import Image from "next/image";
+import { TrendingUp } from "lucide-react";
 
 export function CompanyShowcase() {
   const { companyShowcase } = siteConfig;
@@ -27,34 +26,37 @@ export function CompanyShowcase() {
             key={partner.id}
             className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-secondary/50"
           >
-            {/* Video Thumbnail */}
-            <div className="relative aspect-video overflow-hidden">
-              <Image
-                src={partner.videoThumbnail}
-                alt={`${partner.name} video thumbnail`}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors duration-300 group-hover:bg-black/40">
-                <div className="flex items-center justify-center size-16 rounded-full bg-white/90 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-secondary">
-                  <Play className="size-6 fill-black text-black transition-colors duration-300 group-hover:fill-white group-hover:text-white ml-1" />
+            {/* Header with gradient */}
+            <div className="relative p-6 bg-gradient-to-br from-secondary/10 to-primary/5 border-b border-border">
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-xl font-bold mb-1">{partner.name}</h3>
+                  <p className="text-sm font-medium text-secondary">{partner.aum}</p>
+                </div>
+                <div className="flex items-center justify-center size-10 rounded-full bg-secondary/20 text-secondary">
+                  <TrendingUp className="size-5" />
                 </div>
               </div>
             </div>
 
             {/* Content */}
-            <div className="p-6 space-y-2">
-              <h3 className="text-xl font-semibold">{partner.name}</h3>
-              <p className="text-sm text-muted-foreground">
+            <div className="p-6 space-y-4">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {partner.description}
               </p>
+              
+              {/* Metric Badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/20">
+                <span className="text-xs font-semibold text-secondary">
+                  {partner.metric}
+                </span>
+              </div>
             </div>
 
-            {/* Watch Now Link */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 pt-0">
+            {/* Read Case Study Link */}
+            <div className="px-6 pb-6">
               <button className="text-sm font-medium text-secondary hover:underline transition-all">
-                Watch Story →
+                Read Case Study →
               </button>
             </div>
           </div>
