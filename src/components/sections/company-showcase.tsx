@@ -3,11 +3,9 @@
 import { siteConfig } from "@/lib/config";
 import { Play } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
 
 export function CompanyShowcase() {
   const { companyShowcase } = siteConfig;
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
     <section
@@ -28,8 +26,6 @@ export function CompanyShowcase() {
           <div
             key={partner.id}
             className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:border-secondary/50"
-            onMouseEnter={() => setHoveredId(partner.id)}
-            onMouseLeave={() => setHoveredId(null)}
           >
             {/* Video Thumbnail */}
             <div className="relative aspect-video overflow-hidden">
