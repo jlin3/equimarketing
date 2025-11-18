@@ -72,7 +72,7 @@ export const siteConfig = {
       </svg>
     ),
     badge: "Institutional alternatives for RIAs",
-    title: "Your Institutional-Grade Alternatives Program, White Labeled to Your Brand",
+    title: "Supercharge Your RIA with Institutional-Grade Alternatives",
     description:
       "Custom hedge fund programs and portable alpha for visionary RIA CIOs—designed for risk control, brand differentiation, and operational simplicity.",
     cta: {
