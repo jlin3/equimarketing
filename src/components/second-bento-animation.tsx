@@ -2,7 +2,6 @@
 "use client";
 
 import { OrbitingCircles } from "@/components/ui/orbiting-circle";
-import { useTheme } from "next-themes";
 
 const StrategyBadge = ({ text }: { text: string }) => (
   <div className="flex items-center justify-center bg-background border border-border rounded-full px-4 py-2 text-xs font-medium whitespace-nowrap shadow-sm">
@@ -11,7 +10,6 @@ const StrategyBadge = ({ text }: { text: string }) => (
 );
 
 export function SecondBentoAnimation() {
-  const { resolvedTheme } = useTheme();
   
   return (
     <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
