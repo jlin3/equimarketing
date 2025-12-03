@@ -51,19 +51,12 @@ export function FounderSection() {
                 className="w-full h-full object-cover"
                 controls
                 preload="metadata"
-                poster=""
+                poster={founder.posterUrl}
+                playsInline
               >
                 <source src={founder.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              {/* Custom play button overlay - shows before video loads */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary/30 to-primary/20 pointer-events-none group-hover/video:opacity-0 transition-opacity duration-300">
-                <div className="size-20 rounded-full bg-white/95 flex items-center justify-center shadow-2xl">
-                  <svg className="size-8 text-secondary ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </div>
-              </div>
             </div>
 
             {/* Content Section */}

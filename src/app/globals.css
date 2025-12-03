@@ -6,8 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -219,74 +219,76 @@
 }
 
 :root {
-  --background: oklch(98.46% 0.002 247.84);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(54.65% 0.246 262.87);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(100% 0 0);
-  --accent-foreground: oklch(96.7% 0.003 264.54);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  /* Equi Brand Colors - Light Mode */
+  --background: #EEECE4; /* Linen White */
+  --foreground: #404040; /* Grey */
+  --card: #FFFFFF; /* White */
+  --card-foreground: #0F2319; /* Forest Green */
+  --popover: #FFFFFF;
+  --popover-foreground: #0F2319;
+  --primary: #194E3B; /* Aston Green */
+  --primary-foreground: #EEECE4; /* Linen White */
+  --secondary: #E0A920; /* Ingot Gold */
+  --secondary-foreground: #0F2319; /* Forest Green */
+  --muted: #C9B69A; /* Golden Beige */
+  --muted-foreground: #404040; /* Grey */
+  --accent: #DFF9BA; /* Lime Green */
+  --accent-foreground: #0F2319; /* Forest Green */
+  --destructive: #dc2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #D4C5AE; /* Golden Beige lighter */
+  --input: #D4C5AE;
+  --ring: #194E3B; /* Aston Green */
+  --chart-1: #194E3B; /* Aston Green */
+  --chart-2: #E0A920; /* Ingot Gold */
+  --chart-3: #0F2319; /* Forest Green */
+  --chart-4: #DFF9BA; /* Lime Green */
+  --chart-5: #C9B69A; /* Golden Beige */
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #EEECE4;
+  --sidebar-foreground: #0F2319;
+  --sidebar-primary: #194E3B;
+  --sidebar-primary-foreground: #EEECE4;
+  --sidebar-accent: #DFF9BA;
+  --sidebar-accent-foreground: #0F2319;
+  --sidebar-border: #D4C5AE;
+  --sidebar-ring: #194E3B;
 }
 
 .dark {
-  --background: oklch(21.03% 0.006 285.89); /* #18181B */
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(54.65% 0.246 262.87); /* #2B7FFF */
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(27.39% 0.005 286.03);
-  --accent-foreground:oklch(98.46% 0.002 247.84)
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  /* Equi Brand Colors - Dark Mode */
+  --background: #0F2319; /* Forest Green */
+  --foreground: #EEECE4; /* Linen White */
+  --card: #194E3B; /* Aston Green */
+  --card-foreground: #EEECE4; /* Linen White */
+  --popover: #194E3B;
+  --popover-foreground: #EEECE4;
+  --primary: #EEECE4; /* Linen White */
+  --primary-foreground: #0F2319; /* Forest Green */
+  --secondary: #E0A920; /* Ingot Gold */
+  --secondary-foreground: #0F2319; /* Forest Green */
+  --muted: #3F4F47; /* Darker muted green */
+  --muted-foreground: #C9B69A; /* Golden Beige */
+  --accent: #194E3B; /* Aston Green */
+  --accent-foreground: #EEECE4; /* Linen White */
+  --destructive: #dc2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #2A3F35; /* Dark green border */
+  --input: #2A3F35;
+  --ring: #E0A920; /* Ingot Gold */
+  --chart-1: #DFF9BA; /* Lime Green */
+  --chart-2: #E0A920; /* Ingot Gold */
+  --chart-3: #C9B69A; /* Golden Beige */
+  --chart-4: #759589; /* Aston Green 60% */
+  --chart-5: #EEECE4; /* Linen White */
+  --sidebar: #0F2319;
+  --sidebar-foreground: #EEECE4;
+  --sidebar-primary: #E0A920;
+  --sidebar-primary-foreground: #0F2319;
+  --sidebar-accent: #194E3B;
+  --sidebar-accent-foreground: #EEECE4;
+  --sidebar-border: #2A3F35;
+  --sidebar-ring: #E0A920;
 }
 
 @layer base {
@@ -298,5 +300,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  /* Brand typography - Headings use serif (Rizoma L alternative) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), ui-serif, Georgia, serif;
   }
 }

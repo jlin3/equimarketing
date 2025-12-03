@@ -17,7 +17,7 @@ export const Highlight = ({
   return (
     <span
       className={cn(
-        "p-1 py-0.5 font-medium dark:font-semibold text-secondary",
+        "p-1 py-0.5 font-medium dark:font-semibold text-primary",
         className,
       )}
     >
@@ -54,6 +54,7 @@ export const siteConfig = {
       { id: 3, name: "How It Works", href: "#features" },
       { id: 4, name: "Engagement", href: "#pricing" },
       { id: 5, name: "For Clients", href: "/client-explainer" },
+      { id: 6, name: "Blog", href: "https://blog.equi.com" },
     ],
   },
   hero: {
@@ -347,6 +348,7 @@ export const siteConfig = {
         role: "CEO, Co-Founder",
         bio: "3x founder of VC-backed tech companies, including Archblock, where he launched TrueFi ($1.7B+ in originations) and TrueUSD ($1B+ market cap). A passionate educator in financial literacy.",
         videoUrl: "/founders/tory.mp4",
+        posterUrl: "/founders/tory-poster.jpg",
         linkedIn: "https://www.linkedin.com/in/toryreiss",
       },
       {
@@ -354,6 +356,7 @@ export const siteConfig = {
         role: "CIO, Co-Founder",
         bio: "Over 15 years in asset management. Began career at UBS before managing a market-neutral hedge fund that delivered uncorrelated returns, consistently outperforming public market benchmarks.",
         videoUrl: "/founders/itay.mp4",
+        posterUrl: "/founders/itay-poster.jpg",
         linkedIn: "https://www.linkedin.com/in/itayvinik",
       },
     ],
@@ -864,7 +867,7 @@ export const siteConfig = {
         ],
         description: "For RIAs exploring alternatives",
         buttonText: "Schedule Workshop",
-        buttonColor: "bg-accent text-primary",
+        buttonColor: "bg-muted text-primary hover:bg-muted/80",
         isPopular: false,
       },
       {
@@ -885,7 +888,7 @@ export const siteConfig = {
         ],
         description: "Full-service platform ($500M+ RIAs)",
         buttonText: "Book a Demo",
-        buttonColor: "bg-secondary text-white",
+        buttonColor: "bg-primary text-primary-foreground hover:bg-primary/90",
         isPopular: true,
       },
       {
@@ -903,7 +906,7 @@ export const siteConfig = {
         ],
         description: "For multi-billion dollar firms",
         buttonText: "Discuss Partnership",
-        buttonColor: "bg-primary text-primary-foreground",
+        buttonColor: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
         isPopular: false,
       },
     ],
