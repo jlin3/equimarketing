@@ -1,5 +1,5 @@
 import { BentoSection } from "@/components/sections/bento-section";
-import { CompanyShowcase } from "@/components/sections/company-showcase";
+// import { CompanyShowcase } from "@/components/sections/company-showcase";
 import { CTASection } from "@/components/sections/cta-section";
 import { EducationalSection } from "@/components/sections/educational-section";
 import { FAQSection } from "@/components/sections/faq-section";
@@ -12,7 +12,7 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { MetricsSection } from "@/components/sections/metrics-section";
 import { PricingSection } from "@/components/sections/pricing-section";
 import { QuoteSection } from "@/components/sections/quote-section";
-import { TestimonialSection } from "@/components/sections/testimonial-section";
+// import { TestimonialSection } from "@/components/sections/testimonial-section";
 
 export default function Home() {
   return (
