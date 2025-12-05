@@ -1191,6 +1191,7 @@ export const siteConfig = {
         { id: 10, title: "Our Approach", url: "#" },
         { id: 11, title: "Partnership Model", url: "#" },
         { id: 12, title: "Contact", url: "#" },
+        { id: 13, title: "Games", url: "/games" },
       ],
     },
   ],
