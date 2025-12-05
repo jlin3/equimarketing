@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, FileText, Rocket, CheckCircle2 } from "lucide-rea
 const steps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Discover",
     icon: Calendar,
     color: "from-primary/20 to-primary/5",
     borderColor: "border-primary/30",
@@ -74,7 +74,7 @@ export default function ProcessPage() {
               The Equi Process
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-              Discovery. Design. Deploy.
+              Discover. Design. Deploy.
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A proven three-step process to launch your institutional-grade alternatives program. 
@@ -172,7 +172,7 @@ export default function ProcessPage() {
               href="/#pricing"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-colors"
             >
-              Schedule Discovery Call
+              Schedule a Call
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
