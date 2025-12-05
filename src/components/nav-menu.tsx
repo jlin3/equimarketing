@@ -76,6 +76,11 @@ export function NavMenu() {
     e: React.MouseEvent<HTMLAnchorElement>,
     item: NavItem,
   ) => {
+    // If it's an external link or a page link (not an anchor), let it navigate normally
+    if (!item.href.startsWith("#")) {
+      return;
+    }
+
     e.preventDefault();
 
     const targetId = item.href.substring(1);

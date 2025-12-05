@@ -53,7 +53,7 @@ export const siteConfig = {
       { id: 2, name: "Platform", href: "#bento" },
       { id: 3, name: "How It Works", href: "#features" },
       { id: 4, name: "Engagement", href: "#pricing" },
-      { id: 5, name: "For Clients", href: "/client-explainer" },
+      { id: 5, name: "Our Process", href: "/process" },
       { id: 6, name: "Blog", href: "https://blog.equi.com" },
     ],
   },
@@ -1172,7 +1172,7 @@ export const siteConfig = {
         { id: 1, title: "Custom Evergreen Funds", url: "#" },
         { id: 2, title: "Portable Alpha", url: "#" },
         { id: 3, title: "Proposal Tools", url: "#" },
-        { id: 4, title: "For Clients", url: "/client-explainer" },
+        { id: 4, title: "Our Process", url: "/process" },
       ],
     },
     {
