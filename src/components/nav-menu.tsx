@@ -2,6 +2,7 @@
 
 import { siteConfig } from "@/lib/config";
 import { motion } from "motion/react";
+import { usePathname } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 interface NavItem {
@@ -13,14 +14,37 @@ const navs: NavItem[] = siteConfig.nav.links;
 
 export function NavMenu() {
   const ref = useRef<HTMLUListElement>(null);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  
   const [left, setLeft] = useState(0);
   const [width, setWidth] = useState(0);
   const [isReady, setIsReady] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [isManualScroll, setIsManualScroll] = useState(false);
 
+  // Find if current path matches a nav item
+  const currentPageNav = navs.find((nav) => nav.href === pathname);
+
   React.useEffect(() => {
-    // Initialize with first nav item
+    // Only initialize nav indicator on homepage
+    if (!isHomePage) {
+      // If on a page that matches a nav item, highlight that
+      if (currentPageNav) {
+        const navItem = ref.current?.querySelector(
+          `[href="${currentPageNav.href}"]`,
+        )?.parentElement;
+        if (navItem) {
+          const rect = navItem.getBoundingClientRect();
+          setLeft(navItem.offsetLeft);
+          setWidth(rect.width);
+          setIsReady(true);
+        }
+      }
+      return;
+    }
+
+    // Initialize with first nav item on homepage
     const firstItem = ref.current?.querySelector(
       `[href="#${navs[0].href.substring(1)}"]`,
     )?.parentElement;
@@ -30,14 +54,19 @@ export function NavMenu() {
       setWidth(rect.width);
       setIsReady(true);
     }
-  }, []);
+  }, [isHomePage, currentPageNav]);
 
   React.useEffect(() => {
+    // Only track scroll on homepage
+    if (!isHomePage) return;
+
     const handleScroll = () => {
       // Skip scroll handling during manual click scrolling
       if (isManualScroll) return;
 
-      const sections = navs.map((item) => item.href.substring(1));
+      const sections = navs
+        .filter((item) => item.href.startsWith("#"))
+        .map((item) => item.href.substring(1));
 
       // Find the section closest to viewport top
       let closestSection = sections[0];
@@ -47,7 +76,7 @@ export function NavMenu() {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          const distance = Math.abs(rect.top - 100); // Offset by 100px to trigger earlier
+          const distance = Math.abs(rect.top - 100);
           if (distance < minDistance) {
             minDistance = distance;
             closestSection = section;
@@ -68,16 +97,23 @@ export function NavMenu() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isManualScroll]);
+  }, [isManualScroll, isHomePage]);
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     item: NavItem,
   ) => {
-    // If it's an external link or a page link (not an anchor), let it navigate normally
+    // If it's a page link (not an anchor), let it navigate normally
     if (!item.href.startsWith("#")) {
+      return;
+    }
+
+    // If we're not on the homepage, navigate to homepage with anchor
+    if (!isHomePage) {
+      // Let the browser handle navigation to /#anchor
+      e.currentTarget.href = "/" + item.href;
       return;
     }
 
@@ -87,11 +123,9 @@ export function NavMenu() {
     const element = document.getElementById(targetId);
 
     if (element) {
-      // Set manual scroll flag
       setIsManualScroll(true);
-
-      // Immediately update nav state
       setActiveSection(targetId);
+      
       const navItem = e.currentTarget.parentElement;
       if (navItem) {
         const rect = navItem.getBoundingClientRect();
@@ -99,21 +133,27 @@ export function NavMenu() {
         setWidth(rect.width);
       }
 
-      // Calculate exact scroll position
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - 100; // 100px offset
+      const offsetPosition = elementPosition + window.pageYOffset - 100;
 
-      // Smooth scroll to exact position
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
 
-      // Reset manual scroll flag after animation completes
       setTimeout(() => {
         setIsManualScroll(false);
-      }, 500); // Adjust timing to match scroll animation duration
+      }, 500);
     }
+  };
+
+  const isActive = (item: NavItem) => {
+    if (!isHomePage) {
+      // On other pages, highlight if the path matches
+      return item.href === pathname;
+    }
+    // On homepage, highlight based on scroll position
+    return item.href.startsWith("#") && activeSection === item.href.substring(1);
   };
 
   return (
@@ -125,8 +165,8 @@ export function NavMenu() {
         {navs.map((item) => (
           <li
             key={item.name}
-            className={`z-10 cursor-pointer h-full flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-              activeSection === item.href.substring(1)
+            className={`z-10 cursor-pointer h-full flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
+              isActive(item)
                 ? "text-primary"
                 : "text-primary/60 hover:text-primary"
             } tracking-tight`}
