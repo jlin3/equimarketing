@@ -62,8 +62,7 @@ export default function ProcessPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-32 px-6">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
+      <section className="relative overflow-hidden pt-8 pb-20 md:pt-16 md:pb-32 px-6">
         <div className="max-w-5xl mx-auto text-center relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
