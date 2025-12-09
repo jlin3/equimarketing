@@ -27,7 +27,7 @@ interface TileProps {
 
 function Tile({ letter, state, delay = 0, isRevealing }: TileProps) {
   const stateStyles: Record<LetterState, string> = {
-    correct: "bg-[#194E3B] border-[#194E3B] text-white",
+    correct: "bg-[#22C55E] border-[#22C55E] text-white",
     present: "bg-[#E0A920] border-[#E0A920] text-white",
     absent: "bg-[#404040] border-[#404040] text-white",
     empty: "bg-transparent border-border",
@@ -61,7 +61,7 @@ function KeyboardKey({ keyValue, state, onClick }: KeyboardKeyProps) {
   const isSpecialKey = keyValue === "ENTER" || keyValue === "⌫";
   
   const stateStyles: Record<LetterState | "default", string> = {
-    correct: "bg-[#194E3B] text-white border-[#194E3B]",
+    correct: "bg-[#22C55E] text-white border-[#22C55E]",
     present: "bg-[#E0A920] text-white border-[#E0A920]",
     absent: "bg-[#404040] text-white border-[#404040]",
     empty: "bg-muted hover:bg-muted/80 text-foreground border-border",
@@ -473,6 +473,23 @@ export default function GamesPage() {
 
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-8">
+        {/* Animated Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="flex justify-center mb-6"
+        >
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-32 h-32 md:w-40 md:h-40 object-contain"
+          >
+            <source src="/Equi_Animation - longer.mp4" type="video/mp4" />
+          </video>
+        </motion.div>
+
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -511,17 +528,28 @@ export default function GamesPage() {
                 <p className="text-lg text-muted-foreground">
                   The word was <span className="font-bold text-primary">ALPHA</span>
                 </p>
-                <button
-                  onClick={() => {
-                    setGuesses([]);
-                    setCurrentGuess("");
-                    setGameStatus("playing");
-                    setLetterStates({});
-                  }}
-                  className="mt-4 text-primary underline hover:no-underline"
-                >
-                  Play Again
-                </button>
+                <p className="text-muted-foreground mt-2">
+                  Nice try! You can still claim your reward.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
+                  <button
+                    onClick={() => setShowRewardSelection(true)}
+                    className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"
+                  >
+                    Claim Your Reward
+                  </button>
+                  <button
+                    onClick={() => {
+                      setGuesses([]);
+                      setCurrentGuess("");
+                      setGameStatus("playing");
+                      setLetterStates({});
+                    }}
+                    className="text-primary underline hover:no-underline py-3"
+                  >
+                    Play Again
+                  </button>
+                </div>
               </motion.div>
             )}
 
