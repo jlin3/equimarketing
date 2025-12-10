@@ -165,7 +165,7 @@ function RewardSelection({ onSelect, selectedReward }: RewardSelectionProps) {
           `}
         >
           <Coffee className="w-10 h-10 text-[#00704A] mb-3" />
-          <h4 className="font-bold text-lg">$20 Starbucks Gift Card</h4>
+          <h4 className="font-bold text-lg">$10 Starbucks Gift Card</h4>
           <p className="text-sm text-muted-foreground mt-1">
             Enjoy your favorite coffee on us!
           </p>
@@ -189,10 +189,19 @@ function RewardSelection({ onSelect, selectedReward }: RewardSelectionProps) {
           `}
         >
           <Heart className="w-10 h-10 text-red-500 mb-3" />
-          <h4 className="font-bold text-lg">$36 to Children&apos;s Cancer Research</h4>
+          <h4 className="font-bold text-lg">$15 to Scholars of Finance</h4>
           <p className="text-sm text-muted-foreground mt-1">
-            Help fund life-saving research for kids.
+            Support the next generation of ethical finance leaders.
           </p>
+          <a 
+            href="https://scholarsoffinance.org/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-xs text-primary hover:underline mt-2 inline-block"
+          >
+            Learn more about Scholars of Finance →
+          </a>
           {selectedReward === "donation" && (
             <motion.div
               initial={{ scale: 0 }}
@@ -501,7 +510,7 @@ export default function GamesPage() {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-3">Wordle for Charity</h2>
           <p className="text-muted-foreground max-w-md mx-auto">
-            Guess the 5-letter word and win a reward for yourself or donate to children&apos;s cancer research!
+            Guess the 5-letter word and win a reward for yourself or support the next generation of finance leaders!
           </p>
         </motion.div>
 
