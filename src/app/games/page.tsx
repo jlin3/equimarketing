@@ -283,7 +283,7 @@ function SuccessNotification() {
       </motion.div>
       <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
       <p className="text-white/80">
-        We&apos;ve received your submission. Check your email for your reward details!
+        We&apos;ve received your submission. We&apos;ll follow up with you by email with your reward details.
       </p>
     </motion.div>
   );
