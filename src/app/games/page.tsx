@@ -2,8 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import Link from "next/link";
-import { ArrowLeft, Coffee, Heart, Mail, Check, Sparkles } from "lucide-react";
+import { Coffee, Heart, Mail, Check, Sparkles } from "lucide-react";
 
 const TARGET_WORD = "ALPHA";
 const MAX_GUESSES = 6;
@@ -465,38 +464,30 @@ export default function GamesPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="p-4 border-b border-border">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm font-medium">Back to Home</span>
-          </Link>
-          <h1 className="text-lg font-bold">Equi Games</h1>
-          <div className="w-24" />
-        </div>
-      </header>
-
       {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 py-8">
-        {/* Animated Logo */}
+        {/* Animated Logo - Links to equi.com */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           className="flex justify-center mb-6"
         >
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-32 h-32 md:w-40 md:h-40 object-contain"
+          <a 
+            href="https://equi.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:opacity-80 transition-opacity"
           >
-            <source src="/Equi_Animation - longer.mp4" type="video/mp4" />
-          </video>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-32 h-32 md:w-40 md:h-40 object-contain"
+            >
+              <source src="/Equi_Animation - longer.mp4" type="video/mp4" />
+            </video>
+          </a>
         </motion.div>
 
         {/* Hero */}
