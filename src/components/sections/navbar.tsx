@@ -9,6 +9,7 @@ import { AnimatePresence, motion, useScroll } from "motion/react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const INITIAL_WIDTH = "70rem";
@@ -54,16 +55,22 @@ const drawerMenuVariants = {
 export function Navbar() {
   const { scrollY } = useScroll();
   const { resolvedTheme } = useTheme();
+  const pathname = usePathname();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [mounted, setMounted] = useState(false);
+
+  // Hide navbar on standalone pages like /games
+  const isStandalonePage = pathname === "/games";
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
+    if (isStandalonePage) return;
+    
     const handleScroll = () => {
       const sections = siteConfig.nav.links.map((item) =>
         item.href.substring(1),
@@ -85,14 +92,21 @@ export function Navbar() {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isStandalonePage]);
 
   useEffect(() => {
+    if (isStandalonePage) return;
+    
     const unsubscribe = scrollY.on("change", (latest) => {
       setHasScrolled(latest > 10);
     });
     return unsubscribe;
-  }, [scrollY]);
+  }, [scrollY, isStandalonePage]);
+
+  // Don't render navbar on standalone pages
+  if (isStandalonePage) {
+    return null;
+  }
 
   const toggleDrawer = () => setIsDrawerOpen((prev) => !prev);
   const handleOverlayClick = () => setIsDrawerOpen(false);
