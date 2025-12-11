@@ -499,7 +499,7 @@ export default function GamesPage() {
           <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-4">
             Play for Good
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">Wordle for Charity</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Equi Holiday Wordle</h2>
           <p className="text-muted-foreground max-w-md mx-auto">
             Guess the 5-letter word and win a reward for yourself or support the next generation of finance leaders!
           </p>
@@ -589,6 +589,24 @@ export default function GamesPage() {
           </motion.div>
         )}
       </main>
+
+      {/* Footer with Equi Logo */}
+      <footer className="py-8 mt-8">
+        <div className="flex justify-center">
+          <a 
+            href="https://equi.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="opacity-60 hover:opacity-100 transition-opacity"
+          >
+            <img
+              src="/logos/EQUI-LOGO-SM-HZ-WHITE.png"
+              alt="Equi"
+              className="h-8 w-auto"
+            />
+          </a>
+        </div>
+      </footer>
 
       {/* Win Celebration Modal */}
       <AnimatePresence>
